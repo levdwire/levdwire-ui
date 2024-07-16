@@ -8,6 +8,16 @@ import { ComponentInterface } from "./interface";
  * @license      The MIT License (https://docs.srylius.com/ui/license)
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
-class Component implements ComponentInterface {
-    // ..
+class Component<Options, Element> implements ComponentInterface<Options, Element> {
+    /** @inheritDoc */
+    _id: string;
+
+    /** @inheritDoc */
+    _element: Element;
+
+    /** @inheritDoc */
+    _options: Options;
+
+    /** @inheritDoc */
+    _initialized: boolean;
 }

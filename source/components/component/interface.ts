@@ -6,6 +6,32 @@
  * @license      The MIT License (https://docs.srylius.com/ui/license)
  * @copyright    (C) 2010 - 2024 All rights reserved by Srylius.
  **/
-export declare interface ComponentInterface {
-    // ...
+export declare interface ComponentInterface<Options, Element> {
+    /**
+     * The component id.
+     *
+     * @type {string}
+     */
+    _id: string;
+
+    /**
+     * The component element.
+     *
+     * @type {HTMLElement|HTMLInputElement}
+     */
+    _element: Element;
+
+    /**
+     * The component options.
+     *
+     * @type {Options}
+     */
+    _options: Options;
+
+    /**
+     * The component status.
+     *
+     * @type {boolean}
+     */
+    _initialized: boolean;
 }
