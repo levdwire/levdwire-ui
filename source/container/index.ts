@@ -9,5 +9,6 @@ import { ContainerInterface } from "./interface";
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
 class Container implements ContainerInterface {
-    // ..
+    /** @inheritdoc */
+    _instances: {};
 }

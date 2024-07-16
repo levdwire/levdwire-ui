@@ -7,5 +7,10 @@
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
 export declare interface ContainerInterface {
-    // ...
+    /**
+     * Instances of components available in the container.
+     *
+     * @private
+     */
+    _instances: {};
 }
