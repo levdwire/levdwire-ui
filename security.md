@@ -21,7 +21,7 @@ To get more detailed information about this, you can take a look at this section
 - "Srylius" always reserves the right to change the security patch release dates.
 
 ## Security : Reporting
-If you find (discover) an important or unimportant vulnerability in the Srylius PHP Framework,
-you can send it to **Selçuk Çukur <hk@selcukcukur.com.tr>** with detailed information without
+If you find (discover) an important or unimportant vulnerability in the **Srylius.UI (SUI)**,
+you can send it to **Srylius <report@srylius.com>** with detailed information without
 sharing it publicly. You can contribute to the immediate remediation of the vulnerability and
-contribute to the development of the Srylius PHP Framework.
+contribute to the development of the **Srylius.UI (SUI)**.
