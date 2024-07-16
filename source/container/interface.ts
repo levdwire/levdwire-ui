@@ -36,6 +36,16 @@ export declare interface ContainerInterface {
     set(component: keyof ContainerInterface['_instances'], instance: any, id: string): boolean | void;
 
     /**
+     * Check if the container has the given component instance.
+     *
+     * @param {ContainerInterface['_instances']} component
+     * @param {string} id
+     *
+     * @return {boolean|void}
+     */
+    has(component: keyof ContainerInterface['_instances'], id: string): boolean | void;
+
+    /**
      * Retrieve all components and instances contained in the container.
      *
      * @return {any}
