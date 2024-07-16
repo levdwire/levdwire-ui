@@ -27,10 +27,7 @@ class Container implements ContainerInterface {
         // Check if the component is available.
         if (!this._instances[component]) {
             // Notify the user of the transaction result.
-            console.warn(`%c⚠️Srylius.UI (SUI) - %c Component ${component} does not exist.`,
-                'color: #4c956c; font-weight:700; font-family: Karla, sans-serif; font-size:13px;',
-                'color: #7E8299; font-weight:500; font-family: Karla, sans-serif; font-size:13px;'
-            );
+            warningLog(`Component ${component} does not exist.`);
 
             // If the component is not found, return false.
             return false;
@@ -39,10 +36,7 @@ class Container implements ContainerInterface {
         //  Check if any components have been registered with such a unique ID before.
         if (this._instances[component][id] && !override) {
             // Notify the user of the transaction result.
-            console.warn(`%c⚠️Srylius.UI (SUI) - %c Instance with ID ${id} already exists.`,
-                'color: #4c956c; font-weight:700; font-family: Karla, sans-serif; font-size:13px;',
-                'color: #7E8299; font-weight:500; font-family: Karla, sans-serif; font-size:13px;'
-            );
+            warningLog(`Instance with ID ${id} already exists.`);
 
             // Return false if overwriting is disabled and the component is not found.
             return;
@@ -160,10 +154,7 @@ class Container implements ContainerInterface {
         // Check if the ingredients are present in the instance.
         if (!this._instances[component]) {
             // Notify the user of the transaction result.
-            console.warn(`%c⚠️Srylius.UI (SUI) - %c Component ${component} does not exist.`,
-                'color: #4c956c; font-weight:700; font-family: Karla, sans-serif; font-size:13px;',
-                'color: #7E8299; font-weight:500; font-family: Karla, sans-serif; font-size:13px;'
-            );
+            warningLog(`Component ${component} does not exist.`);
 
             // Return false because the component does not exist.
             return false;
@@ -172,10 +163,7 @@ class Container implements ContainerInterface {
         // Check if a component exists with the specified identifier.
         if (!this._instances[component][id]) {
             // Notify the user of the transaction result.
-            console.warn(`%c⚠️Srylius.UI (SUI) - %c Instance with ID ${id} does not exist.`,
-                'color: #4c956c; font-weight:700; font-family: Karla, sans-serif; font-size:13px;',
-                'color: #7E8299; font-weight:500; font-family: Karla, sans-serif; font-size:13px;'
-            );
+            warningLog(`Instance with ID ${id} does not exist.`);
 
             // Return false because the instance does not exist.
             return false;
