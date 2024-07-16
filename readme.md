@@ -1,3 +1,15 @@
+## Srylius.UI : Learning
+**Srylius.UI (SUI)** is the only user interface kit that stands out as the only user interface kit with 
+the most comprehensive and complete international documentation and video tutorial library. Therefore, 
+it is very easy to start learning for developers of all levels and in all countries.
+
+You can view the documentation by visiting the **[Srylius Docs](https://docs.srylius.com/ui)** page or
+join the **[Srylius Academy](https://academy.srylius.com/)** community to easily access video
+training sets, ready-made sample projects and more. You can also have the chance to participate in
+certification programs on the **[Srylius Academy](https://academy.srylius.com/)** page. Since a
+certain number of certificates will be distributed each year, you should definitely follow the
+announcements.
+
 ## Srylius.UI : Security
 If you think there is a security vulnerability in the **Srylius.UI (SUI)**, you can help resolve the
 issue immediately by sending an e-mail to **Srylius** at **<report@srylius.com>**. Please do
