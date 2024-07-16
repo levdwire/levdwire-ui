@@ -15,6 +15,18 @@ export declare interface ContainerInterface {
     _instances: {};
 
     /**
+     * Add a new component instance into the container.
+     *
+     * @param {ContainerInterface['_instances']} component
+     * @param {any} instance
+     * @param {string} id
+     * @param {boolean} override
+     *
+     * @return {any}
+     */
+    add(component: keyof ContainerInterface['_instances'], instance: any, id?: string, override?: boolean): any;
+
+    /**
      * Get an existing component instance from container.
      *
      * @param {ContainerInterface['_instances']} component
