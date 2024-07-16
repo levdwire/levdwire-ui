@@ -34,4 +34,32 @@ export declare interface ComponentInterface<Options, Element> {
      * @type {boolean}
      */
     _initialized: boolean;
+
+    /**
+     * Initialize component instance.
+     *
+     * @return {any}
+     */
+    initialize(): any;
+
+    /**
+     * Remove the component instance from the container.
+     *
+     * @return {boolean|void}
+     */
+    remove(): boolean | void;
+
+    /**
+     * Destroy the component instance from the container.
+     *
+     * @return {boolean|void}
+     */
+    destroy(): boolean | void;
+
+    /**
+     * Remove and destroy the component instance from the container.
+     *
+     * @return {boolean|void}
+     */
+    destroyAndRemove(): boolean | void;
 }

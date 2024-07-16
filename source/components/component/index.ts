@@ -8,7 +8,7 @@ import { ComponentInterface } from "./interface";
  * @license      The MIT License (https://docs.srylius.com/ui/license)
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
-class Component<Options, Element> implements ComponentInterface<Options, Element> {
+export default abstract class Component<Options, Element> implements ComponentInterface<Options, Element> {
     /** @inheritDoc */
     _id: string;
 
@@ -20,4 +20,22 @@ class Component<Options, Element> implements ComponentInterface<Options, Element
 
     /** @inheritDoc */
     _initialized: boolean;
+
+    /** @inheritdoc */
+    abstract initialize(): any;
+
+    /** @inheritdoc */
+    abstract remove(): boolean | void;
+
+    /** @inheritdoc */
+    abstract destroy(): boolean | void;
+
+    /** @inheritdoc */
+    destroyAndRemove(): boolean | void {
+        // Destroy existing instance from container.
+        this.destroy();
+
+        // Remove existing instance from container.
+        this.remove();
+    }
 }
