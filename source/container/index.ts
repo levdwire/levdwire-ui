@@ -57,6 +57,43 @@ class Container implements ContainerInterface {
         // Return all existing instances.
         return this._instances;
     }
+
+    /**
+     * Component and check if there is a component with a unique identifier.
+     *
+     * @param {Container['_instances']} component
+     * @param {string} id
+     *
+     * @return {boolean}
+     */
+    private _componentAndInstanceCheck(component: keyof Container['_instances'], id: string): boolean {
+        // Check if the ingredients are present in the instance.
+        if (!this._instances[component]) {
+            // Notify the user of the transaction result.
+            console.warn(`%c⚠️Srylius.UI (SUI) - %c Component ${component} does not exist.`,
+                'color: #4c956c; font-weight:700; font-family: Karla, sans-serif; font-size:13px;',
+                'color: #7E8299; font-weight:500; font-family: Karla, sans-serif; font-size:13px;'
+            );
+
+            // Return false because the component does not exist.
+            return false;
+        }
+
+        // Check if a component exists with the specified identifier.
+        if (!this._instances[component][id]) {
+            // Srylius :: Notify the user of the transaction result.
+            console.warn(`%c⚠️Srylius.UI (SUI) - %c Instance with ID ${id} does not exist.`,
+                'color: #4c956c; font-weight:700; font-family: Karla, sans-serif; font-size:13px;',
+                'color: #7E8299; font-weight:500; font-family: Karla, sans-serif; font-size:13px;'
+            );
+
+            // Return false because the instance does not exist.
+            return false;
+        }
+
+        // Return true if the component and instance exist.
+        return true;
+    }
 }
 
 /**
