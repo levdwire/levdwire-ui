@@ -1,5 +1,3 @@
-# Srylius.UI - Next generation user and application interface kit
-
 ## Srylius.UI : Security
 If you think there is a security vulnerability in the **Srylius.UI (SUI)**, you can help resolve the
 issue immediately by sending an e-mail to **Srylius** at **<report@srylius.com>**. Please do
