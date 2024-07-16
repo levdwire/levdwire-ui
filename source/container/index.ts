@@ -26,31 +26,31 @@ class Container implements ContainerInterface {
     add(component: keyof Container['_instances'], instance: any, id?: string, override: boolean = false): any {
         // Check if the component is available.
         if (!this._instances[component]) {
-            // Srylius :: Notify the user of the transaction result.
+            // Notify the user of the transaction result.
             console.warn(`%c⚠️Srylius.UI (SUI) - %c Component ${component} does not exist.`,
                 'color: #4c956c; font-weight:700; font-family: Karla, sans-serif; font-size:13px;',
                 'color: #7E8299; font-weight:500; font-family: Karla, sans-serif; font-size:13px;'
             );
 
-            // Srylius :: If the component is not found, return false.
+            // If the component is not found, return false.
             return false;
         }
 
         //  Check if any components have been registered with such a unique ID before.
         if (this._instances[component][id] && !override) {
-            // Srylius :: Notify the user of the transaction result.
+            // Notify the user of the transaction result.
             console.warn(`%c⚠️Srylius.UI (SUI) - %c Instance with ID ${id} already exists.`,
                 'color: #4c956c; font-weight:700; font-family: Karla, sans-serif; font-size:13px;',
                 'color: #7E8299; font-weight:500; font-family: Karla, sans-serif; font-size:13px;'
             );
 
-            // Srylius :: Return false if overwriting is disabled and the component is not found.
+            // Return false if overwriting is disabled and the component is not found.
             return;
         }
 
         // Check if it has been declared to be overridden.
         if (override && this._instances[component][id]) {
-            // Srylius :: Delete the instance as invalidation is desired.
+            // Delete the instance as invalidation is desired.
             this._instances[component][id].destroyAndRemove();
         }
 
@@ -60,18 +60,24 @@ class Container implements ContainerInterface {
 
     /** @inheritdoc */
     get(component: keyof Container['_instances'], id: string): any {
-        // Srylius :: Component and check if there is a component with a unique identifier.
+        // Component and check if there is a component with a unique identifier.
         if (!this._componentAndInstanceCheck(component, id)) {
             return;
         }
 
-        // Srylius :: If there is an existing instance with the given unique identifier, get it.
+        // If there is an existing instance with the given unique identifier, get it.
         return this._instances[component][id] as any;
     }
 
     /** @inheritdoc */
     set(component: keyof Container['_instances'], instance: any, id: string): boolean | void {
-        // ...
+        // Component and check if there is a component with a unique identifier.
+        if (!this._componentAndInstanceCheck(component, id)) {
+            return;
+        }
+
+        // If there is an existing instance with the given unique identifier, get it.
+        this._instances[component][id] = instance;
     }
 
     /** @inheritdoc */
@@ -165,7 +171,7 @@ class Container implements ContainerInterface {
 
         // Check if a component exists with the specified identifier.
         if (!this._instances[component][id]) {
-            // Srylius :: Notify the user of the transaction result.
+            // Notify the user of the transaction result.
             console.warn(`%c⚠️Srylius.UI (SUI) - %c Instance with ID ${id} does not exist.`,
                 'color: #4c956c; font-weight:700; font-family: Karla, sans-serif; font-size:13px;',
                 'color: #7E8299; font-weight:500; font-family: Karla, sans-serif; font-size:13px;'
@@ -187,7 +193,7 @@ class Container implements ContainerInterface {
  */
 const SuiContainer: Container = new Container();
 
-// Srylius :: Export
+// Export
 export default SuiContainer;
 
 // Check if there is a window containing the DOM document.
