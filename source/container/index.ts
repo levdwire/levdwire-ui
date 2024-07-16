@@ -97,6 +97,16 @@ class Container implements ContainerInterface {
     }
 
     /**
+     * Generate a unique random id.
+     *
+     * @private
+     */
+    private _generateRandomId(): string {
+        // Generate a unique random ID.
+        return Math.random().toString(36).substring(2, 9);
+    }
+
+    /**
      * Component and check if there is a component with a unique identifier.
      *
      * @param {Container['_instances']} component
