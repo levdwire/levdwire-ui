@@ -16,7 +16,7 @@ The license terms mentioned above do not cover the professional version of **Sry
 - You can also view the list of contributors to this project by clicking **[this link](https://github.com/srylius-ui/sui/graphs/contributors)**.
 
 [![Facebook](https://img.shields.io/static/v1?message=srylius&style=for-the-badge&logo=facebook&labelColor=1367d4&color=1877F2&logoColor=white&label=%20)](https://facebook.com/srylius)
-[![Twitter](https://img.shields.io/static/v1?message=srylius&style=for-the-badge&logo=twitter&labelColor=1886c9&color=1DA1F2&logoColor=white&label=%20)](https://twitter.com/srylius)
+[![Twitter](https://img.shields.io/static/v1?message=srylius&style=for-the-badge&logo=x&labelColor=1886c9&color=1DA1F2&logoColor=white&label=%20)](https://twitter.com/srylius)
 [![Instagram](https://img.shields.io/static/v1?message=srylius&style=for-the-badge&logo=instagram&labelColor=ad2491&color=C32AA3&logoColor=white&label=%20)](https://instagram.com/srylius)
 [![YouTube](https://img.shields.io/static/v1?message=srylius&style=for-the-badge&logo=youtube&labelColor=b30202&color=FF0000&logoColor=white&label=%20)](https://youtube.com/@srylius)
 [![LinkedIn](https://img.shields.io/static/v1?message=srylius&style=for-the-badge&logo=linkedin&labelColor=0856a3&color=0A66C2&logoColor=white&label=%20)](https://linkedin.com/company/srylius)
