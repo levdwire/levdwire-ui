@@ -11,4 +11,14 @@ import { ContainerInterface } from "./interface";
 class Container implements ContainerInterface {
     /** @inheritdoc */
     _instances: {};
+
+    /**
+     * Create a new container instance.
+     *
+     * @constructor
+     */
+    constructor() {
+        // Srylius :: Set all component instances to empty.
+        this._instances = {};
+    }
 }
