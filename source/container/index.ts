@@ -18,7 +18,13 @@ class Container implements ContainerInterface {
      * @constructor
      */
     constructor() {
-        // Srylius :: Set all component instances to empty.
+        // Set all component instances to empty.
         this._instances = {};
+    }
+
+    /** @inheritDoc */
+    all(): any {
+        // Return all existing instances.
+        return this._instances;
     }
 }

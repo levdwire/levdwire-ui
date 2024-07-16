@@ -13,4 +13,11 @@ export declare interface ContainerInterface {
      * @private
      */
     _instances: {};
+
+    /**
+     * Retrieve all components and instances contained in the container.
+     *
+     * @return {any}
+     */
+    all(): any;
 }
