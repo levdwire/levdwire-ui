@@ -1,3 +1,5 @@
+import Accordion from "../components/accordion";
+
 declare global {
     /**
      * @name         Window - SUI
@@ -8,6 +10,20 @@ declare global {
      * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
      */
     interface Window {
+        /**
+         * <b>Accordion</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {Accordion}
+         */
+        Accordion: typeof Accordion;
+
+        /**
+         * Initialize all existing accordions.
+         *
+         * @type {void}
+         */
+        initializeAccordions: () => void;
+
         /**
          * <b>Container</b> - Next generation user and application interface kit for developers.
          *

@@ -6,7 +6,7 @@
  * @license      The MIT License (https://docs.srylius.com/ui/license)
  * @copyright    (C) 2010 - 2024 All rights reserved by Srylius.
  **/
-export interface ComponentInterface<Options, Element> {
+export declare interface ComponentInterface<Options, Element> {
     /**
      * The component id.
      *

@@ -1,3 +1,5 @@
+import {AccordionInterface} from "../components/accordion/interface";
+
 /**
  * @name         ContainerInterface - SUI
  * @description  <b>ContainerInterface</b> - Next generation user and application interface kit for developers.
@@ -12,7 +14,9 @@ export declare interface ContainerInterface {
      *
      * @private
      */
-    _instances: {};
+    _instances: {
+        Accordion: { [id: string]: AccordionInterface };
+    };
 
     /**
      * Add a new component instance into the container.

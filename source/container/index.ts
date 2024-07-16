@@ -1,4 +1,5 @@
 import { ContainerInterface } from "./interface";
+import { AccordionInterface } from "../components/accordion/interface";
 
 /**
  * @name         Container - SUI
@@ -10,7 +11,9 @@ import { ContainerInterface } from "./interface";
  **/
 class Container implements ContainerInterface {
     /** @inheritdoc */
-    _instances: {};
+    _instances: {
+        Accordion: { [id: string]: AccordionInterface };
+    };
 
     /**
      * Create a new container instance.
@@ -19,7 +22,9 @@ class Container implements ContainerInterface {
      */
     constructor() {
         // Set all component instances to empty.
-        this._instances = {};
+        this._instances = {
+            Accordion : {}
+        };
     }
 
     /** @inheritdoc */
