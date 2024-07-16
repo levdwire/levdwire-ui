@@ -46,6 +46,16 @@ export declare interface ContainerInterface {
     has(component: keyof ContainerInterface['_instances'], id: string): boolean | void;
 
     /**
+     * Remove the given component instance from the container.
+     *
+     * @param {ContainerInterface['_instances']} component
+     * @param {string} id
+     *
+     * @return {boolean|void}
+     */
+    remove(component: keyof ContainerInterface['_instances'], id: string): boolean | void;
+
+    /**
      * Retrieve all components and instances contained in the container.
      *
      * @return {any}
