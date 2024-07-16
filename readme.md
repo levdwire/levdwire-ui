@@ -21,7 +21,4 @@ The license terms mentioned above do not cover the professional version of **Sry
 [![YouTube](https://img.shields.io/static/v1?message=srylius&style=for-the-badge&logo=youtube&labelColor=b30202&color=FF0000&logoColor=white&label=%20)](https://youtube.com/@srylius)
 [![LinkedIn](https://img.shields.io/static/v1?message=srylius&style=for-the-badge&logo=linkedin&labelColor=0856a3&color=0A66C2&logoColor=white&label=%20)](https://linkedin.com/company/srylius)
 [![Github](https://img.shields.io/static/v1?message=srylius&style=for-the-badge&logo=github&labelColor=0f0f0f&color=161717&logoColor=white&label=%20)](https://github.com/srylius)
-[![Discord](https://img.shields.io/static/v1?message=srylius&style=for-the-badge&logo=discord&labelColor=4f5bdb&color=5865F2&logoColor=white&label=%20)](https://discordapp.com/users/969647700687618088)
-[![WhatsApp](https://img.shields.io/static/v1?message=srylius&style=for-the-badge&logo=whatsapp&labelColor=20bd5b&color=25D366&logoColor=white&label=%20)](https://wa.me/908503031470)
-[![Mail](https://img.shields.io/static/v1?message=srylius&style=for-the-badge&logo=mail.ru&labelColor=8057de&color=8e60f7&logoColor=white&label=%20)](mailto:hello@srylius.com)
 [![Website](https://img.shields.io/static/v1?message=srylius&style=for-the-badge&logo=dribbble&labelColor=cc5c33&color=eb6a3b&logoColor=white&label=%20)](https://srylius.com)
