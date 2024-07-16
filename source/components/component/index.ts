@@ -39,10 +39,10 @@ export default abstract class Component<Options, HTMLElement> implements Compone
     /**
      * Create a new component instance.
      *
-     * @param component Component name.
-     * @param element Component element.
-     * @param options Component options.
-     * @param instanceOptions Component instance options.
+     * @param {ContainerInterface['_instances']} component Component name.
+     * @param {HTMLElement} element Component element.
+     * @param {Options} options Component options.
+     * @param {InstanceOptions} instanceOptions Component instance options.
      *
      * @constructor
      */
