@@ -24,7 +24,13 @@ class Container implements ContainerInterface {
 
     /** @inheritdoc */
     get(component: keyof Container['_instances'], id: string): any {
-        // ...
+        // Srylius :: Component and check if there is a component with a unique identifier.
+        if (!this._componentAndInstanceCheck(component, id)) {
+            return;
+        }
+
+        // Srylius :: If there is an existing instance with the given unique identifier, get it.
+        return this._instances[component][id] as any;
     }
 
     /** @inheritdoc */
