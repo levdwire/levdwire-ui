@@ -34,7 +34,18 @@ class Container implements ContainerInterface {
 
     /** @inheritdoc */
     has(component: keyof Container['_instances'], id: string): boolean | void {
-        // ...
+        // Check if the ingredients are present in the instance.
+        if (!this._instances[component]) {
+            return false;
+        }
+
+        // Check if a component exists with the specified identifier.
+        if (!this._instances[component][id]) {
+            return false;
+        }
+
+        // If it passes both checks, it is present.
+        return true;
     }
 
     /** @inheritdoc */
