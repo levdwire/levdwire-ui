@@ -58,3 +58,19 @@ class Container implements ContainerInterface {
         return this._instances;
     }
 }
+
+/**
+ * <b>Container</b> - Next generation user and application interface kit for developers.
+ *
+ * @type {Container}
+ */
+const SuiContainer: Container = new Container();
+
+// Srylius :: Export
+export default SuiContainer;
+
+// Check if there is a window containing the DOM document.
+if (typeof window !== 'undefined') {
+    // Identify the "Container" component.
+    window.SuiContainer = SuiContainer;
+}
