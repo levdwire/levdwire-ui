@@ -39,7 +39,13 @@ class Container implements ContainerInterface {
 
     /** @inheritdoc */
     remove(component: keyof Container['_instances'], id: string): boolean | void {
-        // ...
+        // Component and check if there is a component with a unique identifier.
+        if (!this._componentAndInstanceCheck(component, id)) {
+            return;
+        }
+
+        // Remove the specified component.
+        delete this._instances[component][id];
     }
 
     /** @inheritdoc */
