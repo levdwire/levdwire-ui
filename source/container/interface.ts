@@ -25,6 +25,17 @@ export declare interface ContainerInterface {
     get(component: keyof ContainerInterface['_instances'], id: string): any;
 
     /**
+     * Set an existing component instance from container.
+     *
+     * @param {ContainerInterface['_instances']} component
+     * @param {any} instance
+     * @param {string} id
+     *
+     * @return {boolean|void}
+     */
+    set(component: keyof ContainerInterface['_instances'], instance: any, id: string): boolean | void;
+
+    /**
      * Retrieve all components and instances contained in the container.
      *
      * @return {any}

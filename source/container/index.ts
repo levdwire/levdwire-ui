@@ -27,6 +27,11 @@ class Container implements ContainerInterface {
         // ...
     }
 
+    /** @inheritdoc */
+    set(component: keyof Container['_instances'], instance: any, id: string): boolean | void {
+        // ...
+    }
+
     /** @inheritDoc */
     all(): any {
         // Return all existing instances.
