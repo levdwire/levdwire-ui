@@ -1,4 +1,5 @@
 import {AccordionInterface} from "../components/accordion/interface";
+import {CollapseInterface} from "../components/collapse/interface";
 
 /**
  * @name         ContainerInterface - SUI
@@ -16,6 +17,7 @@ export declare interface ContainerInterface {
      */
     _instances: {
         Accordion: { [id: string]: AccordionInterface };
+        Collapse: { [id: string]: CollapseInterface };
     };
 
     /**

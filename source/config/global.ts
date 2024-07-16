@@ -1,4 +1,5 @@
 import Accordion from "../components/accordion";
+import Collapse from "../components/collapse";
 
 declare global {
     /**
@@ -18,11 +19,25 @@ declare global {
         Accordion: typeof Accordion;
 
         /**
+         * <b>Collapse</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {Collapse}
+         */
+        Collapse: typeof Collapse;
+
+        /**
          * Initialize all existing accordions.
          *
          * @type {void}
          */
         initializeAccordions: () => void;
+
+        /**
+         * Initialize all existing collapses.
+         *
+         * @type {void}
+         */
+        initializeCollapses: () => void;
 
         /**
          * <b>Container</b> - Next generation user and application interface kit for developers.

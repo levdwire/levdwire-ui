@@ -1,5 +1,6 @@
 import { ContainerInterface } from "./interface";
 import { AccordionInterface } from "../components/accordion/interface";
+import {CollapseInterface} from "../components/collapse/interface";
 
 /**
  * @name         Container - SUI
@@ -13,6 +14,7 @@ class Container implements ContainerInterface {
     /** @inheritdoc */
     _instances: {
         Accordion: { [id: string]: AccordionInterface };
+        Collapse: { [id: string]: CollapseInterface };
     };
 
     /**
