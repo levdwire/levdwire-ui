@@ -9,6 +9,8 @@ import Dropdown, { initializeDropdowns } from './components/dropdown';
 import Menu, { initializeMenus } from './components/menu';
 import Modal, { initializeModals } from './components/modal';
 import Popover, { initializePopovers } from './components/popover';
+import Scroll, { initializeScrolls } from './components/scroll';
+import Stepper, { initializeSteppers } from './components/stepper';
 import Tabs, { initializeTabs } from './components/tabs';
 import Toast, { initializeToasts } from './components/toast';
 import Tooltip, { initializeTooltips } from './components/tooltip';
@@ -26,6 +28,8 @@ const events = new Events('load', [
   initializeMenus,
   initializeModals,
   initializeDrawers,
+  initializeScrolls,
+  initializeSteppers,
   initializeTabs,
   initializeToasts,
   initializeTooltips,
@@ -48,6 +52,8 @@ export default {
   Menu,
   Modal,
   Popover,
+  Scroll,
+  Stepper,
   Tabs,
   Toast,
   Tooltip,

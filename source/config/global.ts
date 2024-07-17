@@ -10,6 +10,7 @@ import Modal from "../components/modal";
 import Popover from "../components/popover";
 import Toast from "../components/toast";
 import Scroll from "../components/scroll";
+import Stepper from "../components/stepper";
 import Tabs from "../components/tabs";
 import InputNumber from "../components/input/number";
 import InputImage from "../components/input/image";
@@ -93,6 +94,13 @@ declare global {
          * @type {Popover}
          */
         Scroll: typeof Scroll;
+
+        /**
+         * <b>Stepper</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {Popover}
+         */
+        Stepper: typeof Stepper;
 
         /**
          * <b>Tabs</b> - Next generation user and application interface kit for developers.
@@ -198,6 +206,13 @@ declare global {
          * @type {void}
          */
         initializeScrolls: () => void;
+
+        /**
+         * Initialize all existing steppers.
+         *
+         * @type {void}
+         */
+        initializeSteppers: () => void;
 
         /**
          * Initialize all existing tabs.

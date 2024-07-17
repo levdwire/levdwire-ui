@@ -10,6 +10,7 @@ import { initializeMenus } from './menu';
 import { initializeModals } from './modal';
 import { initializePopovers } from './popover';
 import { initializeScrolls } from './scroll';
+import { initializeSteppers } from "./stepper";
 import { initializeTabs } from './tabs';
 import { initializeToasts } from './toast';
 import { initializeTooltips } from './tooltip';
@@ -82,6 +83,13 @@ export function initializeLevdwire(): void {
      * @return {void}
      */
     initializeScrolls();
+
+    /**
+     * Initialize all existing steppers.
+     *
+     * @return {void}
+     */
+    initializeSteppers();
 
     /**
      * Initialize all existing tabs.

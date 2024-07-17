@@ -7,6 +7,8 @@ import { initializeDropdowns } from './components/dropdown';
 import { initializeMenus } from './components/menu';
 import { initializeModals } from './components/modal';
 import { initializeDrawers } from './components/drawer';
+import { initializeScrolls } from './components/scroll';
+import { initializeSteppers } from './components/stepper';
 import { initializeTabs } from './components/tabs';
 import { initializeToasts } from './components/toast';
 import { initializeTooltips } from './components/tooltip';
@@ -25,6 +27,8 @@ const events = new Events('load', [
   initializeMenus,
   initializeModals,
   initializeDrawers,
+  initializeScrolls,
+  initializeSteppers,
   initializeTabs,
   initializeToasts,
   initializeTooltips,
@@ -46,6 +50,8 @@ export { default as Dropdown } from './components/dropdown';
 export { default as Menu } from './components/menu';
 export { default as Modal } from './components/modal';
 export { default as Popover } from './components/popover';
+export { default as Scroll } from './components/scroll';
+export { default as Stepper } from './components/stepper';
 export { default as Tabs } from './components/tabs';
 export { default as Toasts } from './components/toast';
 export { default as Tooltip } from './components/tooltip';
@@ -61,6 +67,8 @@ export * from './components/drawer/types';
 export * from './components/dropdown/types';
 export * from './components/modal/types';
 export * from './components/popover/types';
+export * from './components/scroll/types';
+export * from './components/stepper/types';
 export * from './components/tabs/types';
 export * from './components/toast/types';
 export * from './components/tooltip/types';
@@ -78,6 +86,8 @@ export * from './components/drawer/interface';
 export * from './components/dropdown/interface';
 export * from './components/modal/interface';
 export * from './components/popover/interface';
+export * from './components/scroll/interface';
+export * from './components/stepper/interface';
 export * from './components/tabs/interface';
 export * from './components/toast/interface';
 export * from './components/tooltip/interface';
@@ -93,6 +103,8 @@ export { initializeDrawers } from './components/drawer';
 export { initializeDropdowns } from './components/dropdown';
 export { initializeModals } from './components/modal';
 export { initializePopovers } from './components/popover';
+export { initializeScrolls } from './components/scroll';
+export { initializeSteppers } from './components/stepper';
 export { initializeTabs } from './components/tabs';
 export { initializeToasts } from './components/toast';
 export { initializeTooltips } from './components/tooltip';
