@@ -3,6 +3,7 @@ import Collapse from "../components/collapse";
 import Carousel from "../components/carousel";
 import Tooltip from "../components/tooltip";
 import Dismiss from "../components/dismiss";
+import Drawer from "../components/drawer";
 
 declare global {
     /**
@@ -34,6 +35,13 @@ declare global {
          * @type {Dismiss}
          */
         Dismiss: typeof Dismiss;
+
+        /**
+         * <b>Drawer</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {Drawer}
+         */
+        Drawer: typeof Drawer;
 
         /**
          * <b>Collapse</b> - Next generation user and application interface kit for developers.
@@ -76,6 +84,13 @@ declare global {
          * @type {void}
          */
         initializeDismisses: () => void;
+
+        /**
+         * Initialize all existing drawers.
+         *
+         * @type {void}
+         */
+        initializeDrawers: () => void;
 
         /**
          * Initialize all existing tooltips.
