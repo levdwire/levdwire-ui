@@ -1,11 +1,13 @@
 {
-  "name": "levdwirejs",
+  "name": "levdwire",
   "version": "1.0.0",
-  "description": "New generation lightweight, simple and powerful javascript framework.",
+  "description": "Next generation user and application interface kit for developers.",
   "keywords": [
     "javascript",
+    "css",
+    "html",
     "lightweight",
-    "framework",
+    "components",
     "typescript",
     "js",
     "eslint",
@@ -13,12 +15,12 @@
     "simple",
     "powerful",
     "levdwire",
-    "levdwirejs"
+    "levdwire ui"
   ],
   "license": "MIT",
-  "repository": "https://github.com/levdwire/levdwire-js.git",
-  "bugs": "https://github.com/levdwire/levdwire-js/issues",
-  "homepage": "https://levdwire.srylius.com",
+  "repository": "https://github.com/levdwire/levdwire.git",
+  "bugs": "https://github.com/levdwire/levdwire/issues",
+  "homepage": "https://levdwire.com",
   "contributors": [
     "Selçuk Çukur (https://selcukcukur.com.tr)"
   ],
