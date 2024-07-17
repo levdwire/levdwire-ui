@@ -1,20 +1,29 @@
 {
-  "name"            : "sui",
-  "version"         : "1.0.0",
-  "description"     : "Next generation user and application interface kit for developers.",
-  "keywords"        : ["javascript", "css", "html", "components", "typescript", "webpack", "eslint", "container", "ui components", "design system", "ui library", "ui framework", "sui", "tailwind", "srylius ui", "tailwindcss"],
-  "license"         : "MIT",
-  "main"            : "library/cjs/index.js",
-  "module"          : "library/esm/index.js",
-  "types"           : "library/esm/index.d.ts",
-  "style"           : "distribute/sui.min.css",
-  "repository"      : "https://github.com/srylius-ui/sui.git",
-  "bugs"            : "https://github.com/srylius-ui/sui/issues",
-  "homepage"        : "https://ui.srylius.com",
-  "contributors"    : ["Selçuk Çukur (https://selcukcukur.com.tr)"],
-  "author"          : "Srylius Teknoloji Limited Şirketi",
-  "scripts"         : {},
-  "devDependencies" : {},
-  "dependencies"    : {},
-  "files"           : []
+  "name": "levdwirejs",
+  "version": "1.0.0",
+  "description": "New generation lightweight, simple and powerful javascript framework.",
+  "keywords": [
+    "javascript",
+    "lightweight",
+    "framework",
+    "typescript",
+    "js",
+    "eslint",
+    "prettier",
+    "simple",
+    "powerful",
+    "levdwire",
+    "levdwirejs"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/levdwire/levdwire-js.git",
+  "bugs": "https://github.com/levdwire/levdwire-js/issues",
+  "homepage": "https://levdwire.srylius.com",
+  "contributors": [
+    "Selçuk Çukur (https://selcukcukur.com.tr)"
+  ],
+  "author": "Srylius Teknoloji Limited Şirketi",
+  "scripts": {},
+  "devDependencies": {},
+  "files": []
 }
