@@ -1,21 +1,21 @@
 import Accordion from "../components/accordion";
-import Collapse from "../components/collapse";
 import Carousel from "../components/carousel";
-import Tooltip from "../components/tooltip";
+import Collapse from "../components/collapse";
 import Dismiss from "../components/dismiss";
 import Drawer from "../components/drawer";
 import Dropdown from "../components/dropdown";
+import InputImage from "../components/input/image";
+import InputMeter from "../components/input/meter";
+import InputNumber from "../components/input/number";
 import Menu from "../components/menu";
 import Modal from "../components/modal";
 import Popover from "../components/popover";
-import Toast from "../components/toast";
 import Scroll from "../components/scroll";
 import Stepper from "../components/stepper";
-import Tabs from "../components/tabs";
-import InputMeter from "../components/input/meter";
-import InputNumber from "../components/input/number";
-import InputImage from "../components/input/image";
 import Table from "../components/table";
+import Tabs from "../components/tabs";
+import Toast from "../components/toast";
+import Tooltip from "../components/tooltip";
 
 declare global {
     /**
@@ -68,6 +68,27 @@ declare global {
          * @type {Dropdown}
          */
         Dropdown: typeof Dropdown;
+
+        /**
+         * <b>Input: Image</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {Popover}
+         */
+        InputImage: typeof InputImage;
+
+        /**
+         * <b>Input: Number</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {Popover}
+         */
+        InputNumber: typeof InputNumber;
+
+        /**
+         * <b>Input: Meter</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {Popover}
+         */
+        InputMeter: typeof InputMeter;
 
         /**
          * <b>Menu</b> - Next generation user and application interface kit for developers.
@@ -133,27 +154,6 @@ declare global {
         Tooltip: typeof Tooltip;
 
         /**
-         * <b>Input: Meter</b> - Next generation user and application interface kit for developers.
-         *
-         * @type {Popover}
-         */
-        InputMeter: typeof InputMeter;
-
-        /**
-         * <b>Input: Number</b> - Next generation user and application interface kit for developers.
-         *
-         * @type {Popover}
-         */
-        InputNumber: typeof InputNumber;
-
-        /**
-         * <b>Input: Image</b> - Next generation user and application interface kit for developers.
-         *
-         * @type {Popover}
-         */
-        InputImage: typeof InputImage;
-
-        /**
          * Initialize all existing accordions.
          *
          * @type {void}
@@ -194,6 +194,27 @@ declare global {
          * @type {void}
          */
         initializeDropdowns: () => void;
+
+        /**
+         * Initialize all existing image inputs.
+         *
+         * @type {void}
+         */
+        initializeInputImages: () => void;
+
+        /**
+         * Initialize all existing input meters.
+         *
+         * @type {void}
+         */
+        initializeInputMeters: () => void;
+
+        /**
+         * Initialize all existing number inputs.
+         *
+         * @type {void}
+         */
+        initializeInputNumbers: () => void;
 
         /**
          * Initialize all existing menus.
@@ -257,27 +278,6 @@ declare global {
          * @type {void}
          */
         initializeTooltips: () => void;
-
-        /**
-         * Initialize all existing input meters.
-         *
-         * @type {void}
-         */
-        initializeInputMeters: () => void;
-
-        /**
-         * Initialize all existing number inputs.
-         *
-         * @type {void}
-         */
-        initializeInputNumbers: () => void;
-
-        /**
-         * Initialize all existing image inputs.
-         *
-         * @type {void}
-         */
-        initializeInputImages: () => void;
 
         /**
          * <b>Container</b> - Next generation user and application interface kit for developers.

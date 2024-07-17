@@ -1,21 +1,21 @@
 import { AccordionInterface } from "../components/accordion/interface";
-import { CollapseInterface } from "../components/collapse/interface";
 import { CarouselInterface } from "../components/carousel/interface";
-import { TooltipInterface } from "../components/tooltip/interface";
+import { CollapseInterface } from "../components/collapse/interface";
 import { DismissInterface } from "../components/dismiss/interface";
 import { DrawerInterface } from "../components/drawer/interface";
 import { DropdownInterface } from "../components/dropdown/interface";
+import { InputImageInterface } from "../components/input/image/interface";
+import { InputNumberInterface } from "../components/input/number/interface";
+import { InputMeterInterface } from "../components/input/meter/interface";
 import { MenuInterface } from "../components/menu/interface";
 import { ModalInterface } from "../components/modal/interface";
 import { PopoverInterface } from "../components/popover/interface";
-import { ToastInterface } from "../components/toast/interface";
 import { ScrollInterface } from "../components/scroll/interface";
 import { StepperInterface } from "../components/stepper/interface";
+import { TableInterface } from "../components/table/interface";
 import { TabsInterface } from "../components/tabs/interface";
-import { InputNumberInterface } from "../components/input/number/interface";
-import { InputImageInterface } from "../components/input/image/interface";
-import {TableInterface} from "../components/table/interface";
-import {InputMeterInterface} from "../components/input/meter/interface";
+import { ToastInterface } from "../components/toast/interface";
+import { TooltipInterface } from "../components/tooltip/interface";
 
 /**
  * @name         ContainerInterface - Levdwire
@@ -38,6 +38,9 @@ export declare interface ContainerInterface {
         Dismiss: { [id: string]: DismissInterface };
         Drawer: { [id: string]: DrawerInterface };
         Dropdown: { [id: string]: DropdownInterface };
+        InputImage: { [id: string]: InputImageInterface };
+        InputMeter: { [id: string]: InputMeterInterface };
+        InputNumber: { [id: string]: InputNumberInterface };
         Menu: { [id: string]: MenuInterface };
         Modal: { [id: string]: ModalInterface };
         Popover: { [id: string]: PopoverInterface };
@@ -47,9 +50,6 @@ export declare interface ContainerInterface {
         Tabs: { [id: string]: TabsInterface };
         Toast: { [id: string]: ToastInterface };
         Tooltip: { [id: string]: TooltipInterface };
-        InputMeter: { [id: string]: InputMeterInterface };
-        InputNumber: { [id: string]: InputNumberInterface };
-        InputImage: { [id: string]: InputImageInterface };
     };
 
     /**

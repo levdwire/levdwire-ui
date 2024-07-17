@@ -4,9 +4,9 @@ import { initializeCollapses } from './collapse';
 import { initializeDismisses } from './dismiss';
 import { initializeDrawers } from './drawer';
 import { initializeDropdowns } from './dropdown';
+import { initializeInputImages } from './input/image';
 import { initializeInputMeters } from './input/meter';
 import { initializeInputNumbers } from './input/number';
-import { initializeInputImages } from './input/image';
 import { initializeMenus } from './menu';
 import { initializeModals } from './modal';
 import { initializePopovers } from './popover';
@@ -31,18 +31,18 @@ export function initializeLevdwire(): void {
     initializeAccordions();
 
     /**
-     * Initialize all existing collapse.
-     *
-     * @return {void}
-     */
-    initializeCollapses();
-
-    /**
      * Initialize all existing carousel.
      *
      * @return {void}
      */
     initializeCarousels();
+
+    /**
+     * Initialize all existing collapse.
+     *
+     * @return {void}
+     */
+    initializeCollapses();
 
     /**
      * Initialize all existing dismiss.
@@ -52,11 +52,39 @@ export function initializeLevdwire(): void {
     initializeDismisses();
 
     /**
+     * Initialize all existing drawers.
+     *
+     * @return {void}
+     */
+    initializeDrawers();
+
+    /**
      * Initialize all existing dropdown.
      *
      * @return {void}
      */
     initializeDropdowns();
+
+    /**
+     * Initialize all existing image inputs.
+     *
+     * @return {void}
+     */
+    initializeInputImages();
+
+    /**
+     * Initialize all existing meter inputs.
+     *
+     * @return {void}
+     */
+    initializeInputMeters();
+
+    /**
+     * Initialize all existing number inputs.
+     *
+     * @return {void}
+     */
+    initializeInputNumbers();
 
     /**
      * Initialize all existing menu.
@@ -73,11 +101,11 @@ export function initializeLevdwire(): void {
     initializeModals();
 
     /**
-     * Initialize all existing drawer.
+     * Initialize all existing popover.
      *
      * @return {void}
      */
-    initializeDrawers();
+    initializePopovers();
 
     /**
      * Initialize all existing scrolls.
@@ -120,34 +148,6 @@ export function initializeLevdwire(): void {
      * @return {void}
      */
     initializeTooltips();
-
-    /**
-     * Initialize all existing popover.
-     *
-     * @return {void}
-     */
-    initializePopovers();
-
-    /**
-     * Initialize all existing meter inputs.
-     *
-     * @return {void}
-     */
-    initializeInputMeters();
-
-    /**
-     * Initialize all existing number inputs.
-     *
-     * @return {void}
-     */
-    initializeInputNumbers();
-
-    /**
-     * Initialize all existing image inputs.
-     *
-     * @return {void}
-     */
-    initializeInputImages();
 }
 
 // Check if a valid dom element exists.
