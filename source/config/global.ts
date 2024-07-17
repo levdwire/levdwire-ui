@@ -6,6 +6,7 @@ import Dismiss from "../components/dismiss";
 import Drawer from "../components/drawer";
 import Dropdown from "../components/dropdown";
 import Modal from "../components/modal";
+import Popover from "../components/popover";
 
 declare global {
     /**
@@ -30,6 +31,13 @@ declare global {
          * @type {Carousel}
          */
         Carousel: typeof Carousel;
+
+        /**
+         * <b>Collapse</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {Collapse}
+         */
+        Collapse: typeof Collapse;
 
         /**
          * <b>Dismiss</b> - Next generation user and application interface kit for developers.
@@ -60,11 +68,11 @@ declare global {
         Modal: typeof Modal;
 
         /**
-         * <b>Collapse</b> - Next generation user and application interface kit for developers.
+         * <b>Popover</b> - Next generation user and application interface kit for developers.
          *
-         * @type {Collapse}
+         * @type {Popover}
          */
-        Collapse: typeof Collapse;
+        Popover: typeof Popover;
 
         /**
          * <b>Tooltip</b> - Next generation user and application interface kit for developers.
@@ -121,6 +129,13 @@ declare global {
          * @type {void}
          */
         initializeModals: () => void;
+
+        /**
+         * Initialize all existing popovers.
+         *
+         * @type {void}
+         */
+        initializePopovers: () => void;
 
         /**
          * Initialize all existing tooltips.

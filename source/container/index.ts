@@ -7,6 +7,7 @@ import { DismissInterface } from "../components/dismiss/interface";
 import { DrawerInterface } from "../components/drawer/interface";
 import { DropdownInterface } from "../components/dropdown/interface";
 import { ModalInterface } from "../components/modal/interface";
+import { PopoverInterface } from "../components/popover/interface";
 
 /**
  * @name         Container - SUI
@@ -26,6 +27,7 @@ class Container implements ContainerInterface {
         Drawer: { [id: string]: DrawerInterface };
         Dropdown: { [id: string]: DropdownInterface };
         Modal: { [id: string]: ModalInterface };
+        Popover: { [id: string]: PopoverInterface };
         Tooltip: { [id: string]: TooltipInterface };
     };
 
@@ -44,6 +46,7 @@ class Container implements ContainerInterface {
             Drawer : {},
             Dropdown : {},
             Modal : {},
+            Popover : {},
             Tooltip : {}
         };
     }
