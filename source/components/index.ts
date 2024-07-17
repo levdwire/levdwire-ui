@@ -11,7 +11,7 @@ import { initializeTabs } from './tabs';
 import { initializeTooltips } from './tooltip';
 
 /**
- * Initialize all existing <b>Srylius.UI (SUI)</b> components.
+ * Initialize all existing <b>Levdwire</b> components.
  *
  * @return {void}
  */
