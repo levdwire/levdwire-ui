@@ -40,3 +40,6 @@ class Events implements EventsInterface {
         });
     }
 }
+
+// Srylius :: Export
+export default Events;

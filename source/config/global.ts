@@ -180,5 +180,12 @@ declare global {
          * @type {Container}
          */
         SuiContainer: any;
+
+        /**
+         * <b>Levdwire</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {any}
+         */
+        initializeLevdwire: any;
     }
 }
