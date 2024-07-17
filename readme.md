@@ -1,14 +1,14 @@
 # Levdwire - UI
 
+> Attention! Drastic changes may be made until the first stable version is released.
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/levdwire/design/f9cd3abe682bae4124b8f7c65089462a35c83396/Logo/RGB/SVG/levdwire-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/levdwire/design/f9cd3abe682bae4124b8f7c65089462a35c83396/Logo/RGB/SVG/levdwire-light.svg">
-    <img alt="Levdwire" src="https://raw.githubusercontent.com/levdwire/design/f9cd3abe682bae4124b8f7c65089462a35c83396/Logo/RGB/SVG/levdwire-light.svg">
+    <img alt="Levdwire" src="https://raw.githubusercontent.com/levdwire/design/f9cd3abe682bae4124b8f7c65089462a35c83396/Logo/RGB/SVG/levdwire-light.svg" width="600">
   </picture>
 </p>
-
-> Attention! Drastic changes may be made until the first stable version is released.
 
 ## Levdwire : Security
 If you think there is a security vulnerability in the **Levdwire**, you can help resolve the
