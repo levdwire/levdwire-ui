@@ -1,3 +1,7 @@
+## 📖 Srylius.UI
+
+> Attention! Drastic changes may be made until the first stable version is released.
+
 ## 📖 Srylius.UI : Learning
 **Srylius.UI (SUI)** is the only user interface kit that stands out as the only user interface kit with 
 the most comprehensive and complete international documentation and video tutorial library. Therefore, 
