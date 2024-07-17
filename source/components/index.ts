@@ -4,6 +4,7 @@ import { initializeCollapses } from './collapse';
 import { initializeDismisses } from './dismiss';
 import { initializeDrawers } from './drawer';
 import { initializeDropdowns } from './dropdown';
+import { initializeInputMeters } from './input/meter';
 import { initializeInputNumbers } from './input/number';
 import { initializeInputImages } from './input/image';
 import { initializeMenus } from './menu';
@@ -126,6 +127,13 @@ export function initializeLevdwire(): void {
      * @return {void}
      */
     initializePopovers();
+
+    /**
+     * Initialize all existing meter inputs.
+     *
+     * @return {void}
+     */
+    initializeInputMeters();
 
     /**
      * Initialize all existing number inputs.

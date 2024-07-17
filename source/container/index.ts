@@ -16,6 +16,7 @@ import { TableInterface } from "../components/table/interface";
 import { TabsInterface } from "../components/tabs/interface";
 import { InputNumberInterface } from "../components/input/number/interface";
 import { InputImageInterface } from "../components/input/image/interface";
+import {InputMeterInterface} from "../components/input/meter/interface";
 
 /**
  * @name         Container - Levdwire
@@ -43,6 +44,7 @@ class Container implements ContainerInterface {
         Tabs: { [id: string]: TabsInterface };
         Toast: { [id: string]: ToastInterface };
         Tooltip: { [id: string]: TooltipInterface };
+        InputMeter: { [id: string]: InputMeterInterface };
         InputNumber: { [id: string]: InputNumberInterface };
         InputImage: { [id: string]: InputImageInterface };
     };
@@ -70,6 +72,7 @@ class Container implements ContainerInterface {
             Tabs : {},
             Toast : {},
             Tooltip : {},
+            InputMeter : {},
             InputNumber : {},
             InputImage : {}
         };

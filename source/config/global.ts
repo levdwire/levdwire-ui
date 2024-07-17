@@ -12,6 +12,7 @@ import Toast from "../components/toast";
 import Scroll from "../components/scroll";
 import Stepper from "../components/stepper";
 import Tabs from "../components/tabs";
+import InputMeter from "../components/input/meter";
 import InputNumber from "../components/input/number";
 import InputImage from "../components/input/image";
 import Table from "../components/table";
@@ -132,6 +133,13 @@ declare global {
         Tooltip: typeof Tooltip;
 
         /**
+         * <b>Input: Meter</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {Popover}
+         */
+        InputMeter: typeof InputMeter;
+
+        /**
          * <b>Input: Number</b> - Next generation user and application interface kit for developers.
          *
          * @type {Popover}
@@ -249,6 +257,13 @@ declare global {
          * @type {void}
          */
         initializeTooltips: () => void;
+
+        /**
+         * Initialize all existing input meters.
+         *
+         * @type {void}
+         */
+        initializeInputMeters: () => void;
 
         /**
          * Initialize all existing number inputs.
