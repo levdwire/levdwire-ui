@@ -14,6 +14,7 @@ import Stepper from "../components/stepper";
 import Tabs from "../components/tabs";
 import InputNumber from "../components/input/number";
 import InputImage from "../components/input/image";
+import Table from "../components/table";
 
 declare global {
     /**
@@ -103,9 +104,16 @@ declare global {
         Stepper: typeof Stepper;
 
         /**
+         * <b>Table</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {Table}
+         */
+        Table: typeof Table;
+
+        /**
          * <b>Tabs</b> - Next generation user and application interface kit for developers.
          *
-         * @type {Popover}
+         * @type {Tabs}
          */
         Tabs: typeof Tabs;
 
@@ -213,6 +221,13 @@ declare global {
          * @type {void}
          */
         initializeSteppers: () => void;
+
+        /**
+         * Initialize all existing tables.
+         *
+         * @type {void}
+         */
+        initializeTables: () => void;
 
         /**
          * Initialize all existing tabs.

@@ -11,6 +11,7 @@ import { initializeModals } from './modal';
 import { initializePopovers } from './popover';
 import { initializeScrolls } from './scroll';
 import { initializeSteppers } from "./stepper";
+import { initializeTables } from './table';
 import { initializeTabs } from './tabs';
 import { initializeToasts } from './toast';
 import { initializeTooltips } from './tooltip';
@@ -90,6 +91,13 @@ export function initializeLevdwire(): void {
      * @return {void}
      */
     initializeSteppers();
+
+    /**
+     * Initialize all existing tables.
+     *
+     * @return {void}
+     */
+    initializeTables();
 
     /**
      * Initialize all existing tabs.

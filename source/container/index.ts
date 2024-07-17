@@ -12,6 +12,7 @@ import { PopoverInterface } from "../components/popover/interface";
 import { ToastInterface } from "../components/toast/interface";
 import { ScrollInterface } from "../components/scroll/interface";
 import { StepperInterface } from "../components/stepper/interface";
+import { TableInterface } from "../components/table/interface";
 import { TabsInterface } from "../components/tabs/interface";
 import { InputNumberInterface } from "../components/input/number/interface";
 import { InputImageInterface } from "../components/input/image/interface";
@@ -38,6 +39,7 @@ class Container implements ContainerInterface {
         Popover: { [id: string]: PopoverInterface };
         Scroll: { [id: string]: ScrollInterface };
         Stepper: { [id: string]: StepperInterface };
+        Table: { [id: string]: TableInterface };
         Tabs: { [id: string]: TabsInterface };
         Toast: { [id: string]: ToastInterface };
         Tooltip: { [id: string]: TooltipInterface };
@@ -64,6 +66,7 @@ class Container implements ContainerInterface {
             Popover : {},
             Scroll : {},
             Stepper : {},
+            Table : {},
             Tabs : {},
             Toast : {},
             Tooltip : {},

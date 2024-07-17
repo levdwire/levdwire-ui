@@ -14,6 +14,7 @@ import { StepperInterface } from "../components/stepper/interface";
 import { TabsInterface } from "../components/tabs/interface";
 import { InputNumberInterface } from "../components/input/number/interface";
 import { InputImageInterface } from "../components/input/image/interface";
+import {TableInterface} from "../components/table/interface";
 
 /**
  * @name         ContainerInterface - Levdwire
@@ -41,6 +42,7 @@ export declare interface ContainerInterface {
         Popover: { [id: string]: PopoverInterface };
         Scroll: { [id: string]: ScrollInterface };
         Stepper: { [id: string]: StepperInterface };
+        Table: { [id: string]: TableInterface };
         Tabs: { [id: string]: TabsInterface };
         Toast: { [id: string]: ToastInterface };
         Tooltip: { [id: string]: TooltipInterface };
