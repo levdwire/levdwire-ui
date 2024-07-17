@@ -4,6 +4,7 @@ import Carousel from "../components/carousel";
 import Tooltip from "../components/tooltip";
 import Dismiss from "../components/dismiss";
 import Drawer from "../components/drawer";
+import Dropdown from "../components/dropdown";
 
 declare global {
     /**
@@ -42,6 +43,13 @@ declare global {
          * @type {Drawer}
          */
         Drawer: typeof Drawer;
+
+        /**
+         * <b>Dropdown</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {Drawer}
+         */
+        Dropdown: typeof Dropdown;
 
         /**
          * <b>Collapse</b> - Next generation user and application interface kit for developers.
@@ -91,6 +99,13 @@ declare global {
          * @type {void}
          */
         initializeDrawers: () => void;
+
+        /**
+         * Initialize all existing dropdowns.
+         *
+         * @type {void}
+         */
+        initializeDropdowns: () => void;
 
         /**
          * Initialize all existing tooltips.

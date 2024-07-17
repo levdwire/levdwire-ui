@@ -4,6 +4,7 @@ import {CarouselInterface} from "../components/carousel/interface";
 import {TooltipInterface} from "../components/tooltip/interface";
 import {DismissInterface} from "../components/dismiss/interface";
 import {DrawerInterface} from "../components/drawer/interface";
+import {DropdownInterface} from "../components/dropdown/interface";
 
 /**
  * @name         ContainerInterface - SUI
@@ -25,6 +26,7 @@ export declare interface ContainerInterface {
         Collapse: { [id: string]: CollapseInterface };
         Dismiss: { [id: string]: DismissInterface };
         Drawer: { [id: string]: DrawerInterface };
+        Dropdown: { [id: string]: DropdownInterface };
         Tooltip: { [id: string]: TooltipInterface };
     };
 
