@@ -5,6 +5,7 @@ import Tooltip from "../components/tooltip";
 import Dismiss from "../components/dismiss";
 import Drawer from "../components/drawer";
 import Dropdown from "../components/dropdown";
+import Menu from "../components/menu";
 import Modal from "../components/modal";
 import Popover from "../components/popover";
 import Tabs from "../components/tabs";
@@ -61,6 +62,13 @@ declare global {
          * @type {Dropdown}
          */
         Dropdown: typeof Dropdown;
+
+        /**
+         * <b>Menu</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {Menu}
+         */
+        Menu: typeof Menu;
 
         /**
          * <b>Modal</b> - Next generation user and application interface kit for developers.
@@ -138,6 +146,13 @@ declare global {
          * @type {void}
          */
         initializeDropdowns: () => void;
+
+        /**
+         * Initialize all existing menus.
+         *
+         * @type {void}
+         */
+        initializeMenus: () => void;
 
         /**
          * Initialize all existing modals.

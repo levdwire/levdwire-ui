@@ -5,6 +5,7 @@ import { initializeDismisses } from './dismiss';
 import { initializeDrawers } from './drawer';
 import { initializeDropdowns } from './dropdown';
 import { initializeInputNumbers } from './input/number';
+import { initializeMenus } from './menu';
 import { initializeModals } from './modal';
 import { initializePopovers } from './popover';
 import { initializeTabs } from './tabs';
@@ -50,6 +51,13 @@ export function initializeLevdwire(): void {
      * @return {void}
      */
     initializeDropdowns();
+
+    /**
+     * Initialize all existing menu.
+     *
+     * @return {void}
+     */
+    initializeMenus();
 
     /**
      * Initialize all existing modal.

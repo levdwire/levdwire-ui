@@ -6,6 +6,7 @@ import { TooltipInterface } from "../components/tooltip/interface";
 import { DismissInterface } from "../components/dismiss/interface";
 import { DrawerInterface } from "../components/drawer/interface";
 import { DropdownInterface } from "../components/dropdown/interface";
+import { MenuInterface } from "../components/menu/interface";
 import { ModalInterface } from "../components/modal/interface";
 import { PopoverInterface } from "../components/popover/interface";
 import { TabsInterface } from "../components/tabs/interface";
@@ -28,6 +29,7 @@ class Container implements ContainerInterface {
         Dismiss: { [id: string]: DismissInterface };
         Drawer: { [id: string]: DrawerInterface };
         Dropdown: { [id: string]: DropdownInterface };
+        Menu: { [id: string]: MenuInterface };
         Modal: { [id: string]: ModalInterface };
         Popover: { [id: string]: PopoverInterface };
         Tabs: { [id: string]: TabsInterface };
@@ -49,6 +51,7 @@ class Container implements ContainerInterface {
             Dismiss : {},
             Drawer : {},
             Dropdown : {},
+            Menu : {},
             Modal : {},
             Popover : {},
             Tabs : {},
