@@ -10,7 +10,7 @@ import { ComponentOptions } from "./types";
  *
  * @template O, E
  **/
-export interface ComponentInterface<O = ComponentOptions, E = HTMLElement> {
+export declare interface ComponentInterface<O = ComponentOptions, E = HTMLElement> {
     /**
      * The component id.
      *
