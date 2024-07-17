@@ -9,14 +9,10 @@ import { EventsInterface } from "./interface";
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
 class Events implements EventsInterface {
-    /**
-     * @inheritdoc
-     */
+    /** @inheritdoc */
     _type: string;
 
-    /**
-     * @inheritdoc
-     */
+    /** @inheritdoc */
     _functions: EventListener[];
 
     /**
@@ -30,5 +26,17 @@ class Events implements EventsInterface {
 
         // Set event functions.
         this._functions = functions;
+    }
+
+    /** @inheritdoc */
+    initialize(): void {
+        // Register existing listeners individually for the event.
+        this._functions.forEach((tFunction) => {
+            // Check if a valid dom element exists.
+            if (typeof window !== 'undefined') {
+                // Add a new event listener with the specified type.
+                window.addEventListener(this._type, tFunction);
+            }
+        });
     }
 }

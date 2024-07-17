@@ -20,4 +20,11 @@ export declare interface EventsInterface {
      * @type {EventListener[]}
      */
     _functions: EventListener[];
+
+    /**
+     * Register all event listeners.
+     *
+     * @return {void}
+     */
+    initialize(): void;
 }
