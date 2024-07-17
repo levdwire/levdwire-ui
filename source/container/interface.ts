@@ -12,6 +12,7 @@ import { ToastInterface } from "../components/toast/interface";
 import { TabsInterface } from "../components/tabs/interface";
 import { InputNumberInterface } from "../components/input/number/interface";
 import { InputImageInterface } from "../components/input/image/interface";
+import { ScrollInterface } from "../components/scroll/interface";
 
 /**
  * @name         ContainerInterface - Levdwire
@@ -37,6 +38,7 @@ export declare interface ContainerInterface {
         Menu: { [id: string]: MenuInterface };
         Modal: { [id: string]: ModalInterface };
         Popover: { [id: string]: PopoverInterface };
+        Scroll: { [id: string]: ScrollInterface };
         Tabs: { [id: string]: TabsInterface };
         Toast: { [id: string]: ToastInterface };
         Tooltip: { [id: string]: TooltipInterface };

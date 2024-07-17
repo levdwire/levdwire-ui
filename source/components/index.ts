@@ -5,10 +5,13 @@ import { initializeDismisses } from './dismiss';
 import { initializeDrawers } from './drawer';
 import { initializeDropdowns } from './dropdown';
 import { initializeInputNumbers } from './input/number';
+import { initializeInputImages } from './input/image';
 import { initializeMenus } from './menu';
 import { initializeModals } from './modal';
 import { initializePopovers } from './popover';
+import { initializeScrolls } from './scroll';
 import { initializeTabs } from './tabs';
+import { initializeToasts } from './toast';
 import { initializeTooltips } from './tooltip';
 
 /**
@@ -74,11 +77,25 @@ export function initializeLevdwire(): void {
     initializeDrawers();
 
     /**
+     * Initialize all existing scrolls.
+     *
+     * @return {void}
+     */
+    initializeScrolls();
+
+    /**
      * Initialize all existing tabs.
      *
      * @return {void}
      */
     initializeTabs();
+
+    /**
+     * Initialize all existing toasts.
+     *
+     * @return {void}
+     */
+    initializeToasts();
 
     /**
      * Initialize all existing tooltip.
@@ -100,6 +117,13 @@ export function initializeLevdwire(): void {
      * @return {void}
      */
     initializeInputNumbers();
+
+    /**
+     * Initialize all existing image inputs.
+     *
+     * @return {void}
+     */
+    initializeInputImages();
 }
 
 // Check if a valid dom element exists.

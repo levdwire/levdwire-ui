@@ -9,6 +9,7 @@ import Menu from "../components/menu";
 import Modal from "../components/modal";
 import Popover from "../components/popover";
 import Toast from "../components/toast";
+import Scroll from "../components/scroll";
 import Tabs from "../components/tabs";
 import InputNumber from "../components/input/number";
 import InputImage from "../components/input/image";
@@ -85,6 +86,13 @@ declare global {
          * @type {Popover}
          */
         Popover: typeof Popover;
+
+        /**
+         * <b>Scroll</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {Popover}
+         */
+        Scroll: typeof Scroll;
 
         /**
          * <b>Tabs</b> - Next generation user and application interface kit for developers.
@@ -183,6 +191,13 @@ declare global {
          * @type {void}
          */
         initializePopovers: () => void;
+
+        /**
+         * Initialize all existing scrolls.
+         *
+         * @type {void}
+         */
+        initializeScrolls: () => void;
 
         /**
          * Initialize all existing tabs.

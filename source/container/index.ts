@@ -10,6 +10,7 @@ import { MenuInterface } from "../components/menu/interface";
 import { ModalInterface } from "../components/modal/interface";
 import { PopoverInterface } from "../components/popover/interface";
 import { ToastInterface } from "../components/toast/interface";
+import { ScrollInterface } from "../components/scroll/interface";
 import { TabsInterface } from "../components/tabs/interface";
 import { InputNumberInterface } from "../components/input/number/interface";
 import { InputImageInterface } from "../components/input/image/interface";
@@ -34,6 +35,7 @@ class Container implements ContainerInterface {
         Menu: { [id: string]: MenuInterface };
         Modal: { [id: string]: ModalInterface };
         Popover: { [id: string]: PopoverInterface };
+        Scroll: { [id: string]: ScrollInterface };
         Tabs: { [id: string]: TabsInterface };
         Toast: { [id: string]: ToastInterface };
         Tooltip: { [id: string]: TooltipInterface };
@@ -58,6 +60,7 @@ class Container implements ContainerInterface {
             Menu : {},
             Modal : {},
             Popover : {},
+            Scroll : {},
             Tabs : {},
             Toast : {},
             Tooltip : {},

@@ -13,6 +13,7 @@ import Tabs, { initializeTabs } from './components/tabs';
 import Toast, { initializeToasts } from './components/toast';
 import Tooltip, { initializeTooltips } from './components/tooltip';
 import InputNumber, { initializeInputNumbers } from './components/input/number';
+import InputImage, { initializeInputImages } from './components/input/image';
 import './components';
 
 // Instance
@@ -29,7 +30,8 @@ const events = new Events('load', [
   initializeToasts,
   initializeTooltips,
   initializePopovers,
-  initializeInputNumbers
+  initializeInputNumbers,
+  initializeInputImages,
 ]);
 
 // Initialize
@@ -50,5 +52,6 @@ export default {
   Toast,
   Tooltip,
   InputNumber,
+  InputImage,
   Events,
 };

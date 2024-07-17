@@ -12,6 +12,7 @@ import { initializeToasts } from './components/toast';
 import { initializeTooltips } from './components/tooltip';
 import { initializePopovers } from './components/popover';
 import { initializeInputNumbers } from './components/input/number';
+import { initializeInputImages } from './components/input/image';
 import './components';
 
 // Instance
@@ -28,7 +29,8 @@ const events = new Events('load', [
   initializeToasts,
   initializeTooltips,
   initializePopovers,
-  initializeInputNumbers
+  initializeInputNumbers,
+  initializeInputImages,
 ]);
 
 // Initialize
@@ -48,6 +50,7 @@ export { default as Tabs } from './components/tabs';
 export { default as Toasts } from './components/toast';
 export { default as Tooltip } from './components/tooltip';
 export { default as InputNumber } from './components/input/number';
+export { default as InputImage } from './components/input/image';
 
 // Export all types.
 export * from './components/accordion/types';
@@ -62,6 +65,7 @@ export * from './components/tabs/types';
 export * from './components/toast/types';
 export * from './components/tooltip/types';
 export * from './components/input/number/types';
+export * from './components/input/image/types';
 export * from './container/types';
 export * from './events/types';
 
@@ -78,6 +82,7 @@ export * from './components/tabs/interface';
 export * from './components/toast/interface';
 export * from './components/tooltip/interface';
 export * from './components/input/number/interface';
+export * from './components/input/image/interface';
 
 // Export all initialize functions.
 export { initializeAccordions } from './components/accordion';
@@ -92,6 +97,7 @@ export { initializeTabs } from './components/tabs';
 export { initializeToasts } from './components/toast';
 export { initializeTooltips } from './components/tooltip';
 export { initializeInputNumbers } from './components/input/number';
+export { initializeInputImages } from './components/input/image';
 
 // Export initialize Levdwire function.
 export { initializeLevdwire } from './components';
