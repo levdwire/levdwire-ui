@@ -1,3 +1,6 @@
+import { ComponentInterface } from "../component/interface";
+import { CollapseOptions } from "./types";
+
 /**
  * @name         CollapseInterface - SUI
  * @description  <b>CollapseInterface</b> - Next generation user and application interface kit for developers.
@@ -6,6 +9,6 @@
  * @license      The MIT License (https://docs.srylius.com/ui/license)
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
-export declare interface CollapseInterface {
+export declare interface CollapseInterface extends ComponentInterface<CollapseOptions, HTMLElement> {
     // ...
 }

@@ -25,7 +25,8 @@ class Container implements ContainerInterface {
     constructor() {
         // Set all component instances to empty.
         this._instances = {
-            Accordion : {}
+            Accordion : {},
+            Collapse : {}
         };
     }
 

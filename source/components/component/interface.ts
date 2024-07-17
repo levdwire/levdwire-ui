@@ -1,3 +1,5 @@
+import { ComponentOptions } from "./types";
+
 /**
  * @name         ComponentInterface - SUI
  * @description  <b>ComponentInterface</b> - Next generation user and application interface kit for developers.
@@ -5,8 +7,10 @@
  * @author       Selçuk Çukur <hk@selcukcukur.com.tr>
  * @license      The MIT License (https://docs.srylius.com/ui/license)
  * @copyright    (C) 2010 - 2024 All rights reserved by Srylius.
+ *
+ * @template O, E
  **/
-export declare interface ComponentInterface<Options, Element> {
+export interface ComponentInterface<O = ComponentOptions, E = HTMLElement> {
     /**
      * The component id.
      *
@@ -17,16 +21,18 @@ export declare interface ComponentInterface<Options, Element> {
     /**
      * The component element.
      *
-     * @type {HTMLElement|HTMLInputElement}
+     * @template E
+     * @type {E}
      */
-    _element: Element;
+    _element: E;
 
     /**
      * The component options.
      *
-     * @type {Options}
+     * @template O
+     * @type {O}
      */
-    _options: Options;
+    _options: O;
 
     /**
      * The component status.
