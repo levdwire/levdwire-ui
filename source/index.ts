@@ -4,9 +4,11 @@ import { initializeCollapses } from './components/collapse';
 import { initializeCarousels } from './components/carousel';
 import { initializeDismisses } from './components/dismiss';
 import { initializeDropdowns } from './components/dropdown';
+import { initializeMenus } from './components/menu';
 import { initializeModals } from './components/modal';
 import { initializeDrawers } from './components/drawer';
 import { initializeTabs } from './components/tabs';
+import { initializeToasts } from './components/toast';
 import { initializeTooltips } from './components/tooltip';
 import { initializePopovers } from './components/popover';
 import { initializeInputNumbers } from './components/input/number';
@@ -19,9 +21,11 @@ const events = new Events('load', [
   initializeCarousels,
   initializeDismisses,
   initializeDropdowns,
+  initializeMenus,
   initializeModals,
   initializeDrawers,
   initializeTabs,
+  initializeToasts,
   initializeTooltips,
   initializePopovers,
   initializeInputNumbers
@@ -37,9 +41,11 @@ export { default as Collapse } from './components/collapse';
 export { default as Dismiss } from './components/dismiss';
 export { default as Drawer } from './components/drawer';
 export { default as Dropdown } from './components/dropdown';
+export { default as Menu } from './components/menu';
 export { default as Modal } from './components/modal';
 export { default as Popover } from './components/popover';
 export { default as Tabs } from './components/tabs';
+export { default as Toasts } from './components/toast';
 export { default as Tooltip } from './components/tooltip';
 export { default as InputNumber } from './components/input/number';
 
@@ -53,6 +59,7 @@ export * from './components/dropdown/types';
 export * from './components/modal/types';
 export * from './components/popover/types';
 export * from './components/tabs/types';
+export * from './components/toast/types';
 export * from './components/tooltip/types';
 export * from './components/input/number/types';
 export * from './container/types';
@@ -68,6 +75,7 @@ export * from './components/dropdown/interface';
 export * from './components/modal/interface';
 export * from './components/popover/interface';
 export * from './components/tabs/interface';
+export * from './components/toast/interface';
 export * from './components/tooltip/interface';
 export * from './components/input/number/interface';
 
@@ -81,6 +89,7 @@ export { initializeDropdowns } from './components/dropdown';
 export { initializeModals } from './components/modal';
 export { initializePopovers } from './components/popover';
 export { initializeTabs } from './components/tabs';
+export { initializeToasts } from './components/toast';
 export { initializeTooltips } from './components/tooltip';
 export { initializeInputNumbers } from './components/input/number';
 

@@ -6,9 +6,11 @@ import Collapse, { initializeCollapses } from './components/collapse';
 import Dismiss, { initializeDismisses } from './components/dismiss';
 import Drawer, { initializeDrawers } from './components/drawer';
 import Dropdown, { initializeDropdowns } from './components/dropdown';
+import Menu, { initializeMenus } from './components/menu';
 import Modal, { initializeModals } from './components/modal';
 import Popover, { initializePopovers } from './components/popover';
 import Tabs, { initializeTabs } from './components/tabs';
+import Toast, { initializeToasts } from './components/toast';
 import Tooltip, { initializeTooltips } from './components/tooltip';
 import InputNumber, { initializeInputNumbers } from './components/input/number';
 import './components';
@@ -20,9 +22,11 @@ const events = new Events('load', [
   initializeCarousels,
   initializeDismisses,
   initializeDropdowns,
+  initializeMenus,
   initializeModals,
   initializeDrawers,
   initializeTabs,
+  initializeToasts,
   initializeTooltips,
   initializePopovers,
   initializeInputNumbers
@@ -39,9 +43,11 @@ export default {
   Drawer,
   Dismiss,
   Dropdown,
+  Menu,
   Modal,
   Popover,
   Tabs,
+  Toast,
   Tooltip,
   InputNumber,
   Events,

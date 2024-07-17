@@ -8,6 +8,7 @@ import Dropdown from "../components/dropdown";
 import Menu from "../components/menu";
 import Modal from "../components/modal";
 import Popover from "../components/popover";
+import Toast from "../components/toast";
 import Tabs from "../components/tabs";
 import InputNumber from "../components/input/number";
 
@@ -92,6 +93,13 @@ declare global {
         Tabs: typeof Tabs;
 
         /**
+         * <b>Toast</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {Toast}
+         */
+        Toast: typeof Toast;
+
+        /**
          * <b>Tooltip</b> - Next generation user and application interface kit for developers.
          *
          * @type {Tooltip}
@@ -174,6 +182,13 @@ declare global {
          * @type {void}
          */
         initializeTabs: () => void;
+
+        /**
+         * Initialize all existing toasts.
+         *
+         * @type {void}
+         */
+        initializeToasts: () => void;
 
         /**
          * Initialize all existing tooltips.
