@@ -8,6 +8,7 @@ import Dropdown from "../components/dropdown";
 import Modal from "../components/modal";
 import Popover from "../components/popover";
 import Tabs from "../components/tabs";
+import InputNumber from "../components/input/number";
 
 declare global {
     /**
@@ -90,6 +91,13 @@ declare global {
         Tooltip: typeof Tooltip;
 
         /**
+         * <b>Input: Number</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {Popover}
+         */
+        InputNumber: typeof InputNumber;
+
+        /**
          * Initialize all existing accordions.
          *
          * @type {void}
@@ -158,6 +166,13 @@ declare global {
          * @type {void}
          */
         initializeTooltips: () => void;
+
+        /**
+         * Initialize all existing number inputs.
+         *
+         * @type {void}
+         */
+        initializeInputNumbers: () => void;
 
         /**
          * <b>Container</b> - Next generation user and application interface kit for developers.

@@ -7,7 +7,8 @@ import { DrawerInterface } from "../components/drawer/interface";
 import { DropdownInterface } from "../components/dropdown/interface";
 import { ModalInterface } from "../components/modal/interface";
 import { PopoverInterface } from "../components/popover/interface";
-import {TabsInterface} from "../components/tabs/interface";
+import { TabsInterface } from "../components/tabs/interface";
+import { InputNumberInterface } from "../components/input/number/interface";
 
 /**
  * @name         ContainerInterface - SUI
@@ -34,6 +35,7 @@ export declare interface ContainerInterface {
         Popover: { [id: string]: PopoverInterface };
         Tabs: { [id: string]: TabsInterface };
         Tooltip: { [id: string]: TooltipInterface };
+        InputNumber: { [id: string]: InputNumberInterface };
     };
 
     /**
