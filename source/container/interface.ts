@@ -11,6 +11,7 @@ import { PopoverInterface } from "../components/popover/interface";
 import { ToastInterface } from "../components/toast/interface";
 import { TabsInterface } from "../components/tabs/interface";
 import { InputNumberInterface } from "../components/input/number/interface";
+import { InputImageInterface } from "../components/input/image/interface";
 
 /**
  * @name         ContainerInterface - Levdwire
@@ -40,6 +41,7 @@ export declare interface ContainerInterface {
         Toast: { [id: string]: ToastInterface };
         Tooltip: { [id: string]: TooltipInterface };
         InputNumber: { [id: string]: InputNumberInterface };
+        InputImage: { [id: string]: InputImageInterface };
     };
 
     /**

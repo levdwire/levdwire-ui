@@ -11,6 +11,7 @@ import Popover from "../components/popover";
 import Toast from "../components/toast";
 import Tabs from "../components/tabs";
 import InputNumber from "../components/input/number";
+import InputImage from "../components/input/image";
 
 declare global {
     /**
@@ -114,6 +115,13 @@ declare global {
         InputNumber: typeof InputNumber;
 
         /**
+         * <b>Input: Image</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {Popover}
+         */
+        InputImage: typeof InputImage;
+
+        /**
          * Initialize all existing accordions.
          *
          * @type {void}
@@ -203,6 +211,13 @@ declare global {
          * @type {void}
          */
         initializeInputNumbers: () => void;
+
+        /**
+         * Initialize all existing image inputs.
+         *
+         * @type {void}
+         */
+        initializeInputImages: () => void;
 
         /**
          * <b>Container</b> - Next generation user and application interface kit for developers.
