@@ -1,4 +1,4 @@
-## Srylius.UI
+# Srylius.UI
 
 > Attention! Drastic changes may be made until the first stable version is released.
 
