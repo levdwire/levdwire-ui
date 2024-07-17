@@ -5,6 +5,7 @@ import Tooltip from "../components/tooltip";
 import Dismiss from "../components/dismiss";
 import Drawer from "../components/drawer";
 import Dropdown from "../components/dropdown";
+import Modal from "../components/modal";
 
 declare global {
     /**
@@ -47,9 +48,16 @@ declare global {
         /**
          * <b>Dropdown</b> - Next generation user and application interface kit for developers.
          *
-         * @type {Drawer}
+         * @type {Dropdown}
          */
         Dropdown: typeof Dropdown;
+
+        /**
+         * <b>Modal</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {Modal}
+         */
+        Modal: typeof Modal;
 
         /**
          * <b>Collapse</b> - Next generation user and application interface kit for developers.
@@ -106,6 +114,13 @@ declare global {
          * @type {void}
          */
         initializeDropdowns: () => void;
+
+        /**
+         * Initialize all existing modals.
+         *
+         * @type {void}
+         */
+        initializeModals: () => void;
 
         /**
          * Initialize all existing tooltips.

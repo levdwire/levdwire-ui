@@ -1,10 +1,11 @@
-import {AccordionInterface} from "../components/accordion/interface";
-import {CollapseInterface} from "../components/collapse/interface";
-import {CarouselInterface} from "../components/carousel/interface";
-import {TooltipInterface} from "../components/tooltip/interface";
-import {DismissInterface} from "../components/dismiss/interface";
-import {DrawerInterface} from "../components/drawer/interface";
-import {DropdownInterface} from "../components/dropdown/interface";
+import { AccordionInterface } from "../components/accordion/interface";
+import { CollapseInterface } from "../components/collapse/interface";
+import { CarouselInterface } from "../components/carousel/interface";
+import { TooltipInterface } from "../components/tooltip/interface";
+import { DismissInterface } from "../components/dismiss/interface";
+import { DrawerInterface } from "../components/drawer/interface";
+import { DropdownInterface } from "../components/dropdown/interface";
+import { ModalInterface } from "../components/modal/interface";
 
 /**
  * @name         ContainerInterface - SUI
@@ -27,6 +28,7 @@ export declare interface ContainerInterface {
         Dismiss: { [id: string]: DismissInterface };
         Drawer: { [id: string]: DrawerInterface };
         Dropdown: { [id: string]: DropdownInterface };
+        Modal: { [id: string]: ModalInterface };
         Tooltip: { [id: string]: TooltipInterface };
     };
 
