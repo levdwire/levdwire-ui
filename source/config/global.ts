@@ -2,6 +2,7 @@ import Accordion from "../components/accordion";
 import Collapse from "../components/collapse";
 import Carousel from "../components/carousel";
 import Tooltip from "../components/tooltip";
+import Dismiss from "../components/dismiss";
 
 declare global {
     /**
@@ -26,6 +27,13 @@ declare global {
          * @type {Carousel}
          */
         Carousel: typeof Carousel;
+
+        /**
+         * <b>Dismiss</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {Dismiss}
+         */
+        Dismiss: typeof Dismiss;
 
         /**
          * <b>Collapse</b> - Next generation user and application interface kit for developers.
@@ -61,6 +69,13 @@ declare global {
          * @type {void}
          */
         initializeCollapses: () => void;
+
+        /**
+         * Initialize all existing dismisses.
+         *
+         * @type {void}
+         */
+        initializeDismisses: () => void;
 
         /**
          * Initialize all existing tooltips.
