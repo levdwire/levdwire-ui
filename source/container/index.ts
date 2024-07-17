@@ -1,6 +1,7 @@
 import { ContainerInterface } from "./interface";
 import { AccordionInterface } from "../components/accordion/interface";
 import {CollapseInterface} from "../components/collapse/interface";
+import {CarouselInterface} from "../components/carousel/interface";
 
 /**
  * @name         Container - SUI
@@ -14,6 +15,7 @@ class Container implements ContainerInterface {
     /** @inheritdoc */
     _instances: {
         Accordion: { [id: string]: AccordionInterface };
+        Carousel: { [id: string]: CarouselInterface };
         Collapse: { [id: string]: CollapseInterface };
     };
 
@@ -26,7 +28,8 @@ class Container implements ContainerInterface {
         // Set all component instances to empty.
         this._instances = {
             Accordion : {},
-            Collapse : {}
+            Collapse : {},
+            Carousel : {}
         };
     }
 

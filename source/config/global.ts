@@ -1,5 +1,6 @@
 import Accordion from "../components/accordion";
 import Collapse from "../components/collapse";
+import Carousel from "../components/carousel";
 
 declare global {
     /**
@@ -19,6 +20,13 @@ declare global {
         Accordion: typeof Accordion;
 
         /**
+         * <b>Carousel</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {Carousel}
+         */
+        Carousel: typeof Carousel;
+
+        /**
          * <b>Collapse</b> - Next generation user and application interface kit for developers.
          *
          * @type {Collapse}
@@ -31,6 +39,13 @@ declare global {
          * @type {void}
          */
         initializeAccordions: () => void;
+
+        /**
+         * Initialize all existing carousels.
+         *
+         * @type {void}
+         */
+        initializeCarousels: () => void;
 
         /**
          * Initialize all existing collapses.
