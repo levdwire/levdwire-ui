@@ -7,5 +7,17 @@
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
 export declare interface EventsInterface {
-    // ...
+    /**
+     * The event type.
+     *
+     * @type {string}
+     */
+    _type: string;
+
+    /**
+     * The event functions.
+     *
+     * @type {EventListener[]}
+     */
+    _functions: EventListener[];
 }

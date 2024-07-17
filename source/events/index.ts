@@ -9,5 +9,13 @@ import { EventsInterface } from "./interface";
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
 class Events implements EventsInterface {
-    // ..
+    /**
+     * @inheritdoc
+     */
+    _type: string;
+
+    /**
+     * @inheritdoc
+     */
+    _functions: EventListener[];
 }
