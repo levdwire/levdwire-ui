@@ -1,6 +1,7 @@
 import {AccordionInterface} from "../components/accordion/interface";
 import {CollapseInterface} from "../components/collapse/interface";
 import {CarouselInterface} from "../components/carousel/interface";
+import {TooltipInterface} from "../components/tooltip/interface";
 
 /**
  * @name         ContainerInterface - SUI
@@ -20,6 +21,7 @@ export declare interface ContainerInterface {
         Accordion: { [id: string]: AccordionInterface };
         Carousel: { [id: string]: CarouselInterface };
         Collapse: { [id: string]: CollapseInterface };
+        Tooltip: { [id: string]: TooltipInterface };
     };
 
     /**

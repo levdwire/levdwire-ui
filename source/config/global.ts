@@ -1,6 +1,7 @@
 import Accordion from "../components/accordion";
 import Collapse from "../components/collapse";
 import Carousel from "../components/carousel";
+import Tooltip from "../components/tooltip";
 
 declare global {
     /**
@@ -34,6 +35,13 @@ declare global {
         Collapse: typeof Collapse;
 
         /**
+         * <b>Tooltip</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {Tooltip}
+         */
+        Tooltip: typeof Tooltip;
+
+        /**
          * Initialize all existing accordions.
          *
          * @type {void}
@@ -53,6 +61,13 @@ declare global {
          * @type {void}
          */
         initializeCollapses: () => void;
+
+        /**
+         * Initialize all existing tooltips.
+         *
+         * @type {void}
+         */
+        initializeTooltips: () => void;
 
         /**
          * <b>Container</b> - Next generation user and application interface kit for developers.
