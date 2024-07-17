@@ -18,4 +18,17 @@ class Events implements EventsInterface {
      * @inheritdoc
      */
     _functions: EventListener[];
+
+    /**
+     * Create a new events instance.
+     *
+     * @constructor
+     */
+    constructor(type: string, functions: EventListener[] = []) {
+        // Set event type.
+        this._type = type;
+
+        // Set event functions.
+        this._functions = functions;
+    }
 }
