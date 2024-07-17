@@ -7,6 +7,7 @@ import Drawer from "../components/drawer";
 import Dropdown from "../components/dropdown";
 import Modal from "../components/modal";
 import Popover from "../components/popover";
+import Tabs from "../components/tabs";
 
 declare global {
     /**
@@ -75,6 +76,13 @@ declare global {
         Popover: typeof Popover;
 
         /**
+         * <b>Tabs</b> - Next generation user and application interface kit for developers.
+         *
+         * @type {Popover}
+         */
+        Tabs: typeof Tabs;
+
+        /**
          * <b>Tooltip</b> - Next generation user and application interface kit for developers.
          *
          * @type {Tooltip}
@@ -136,6 +144,13 @@ declare global {
          * @type {void}
          */
         initializePopovers: () => void;
+
+        /**
+         * Initialize all existing tabs.
+         *
+         * @type {void}
+         */
+        initializeTabs: () => void;
 
         /**
          * Initialize all existing tooltips.
