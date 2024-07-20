@@ -1,7 +1,7 @@
 import { ModalInterface } from "./interface";
 import { ModalOptions } from "./types";
 import { InstanceOptions } from "../../container/types";
-import SuiContainer from "../../container";
+import LevdwireContainer from "../../container";
 import Component from "../component";
 
 /**
@@ -57,7 +57,7 @@ class Modal extends Component<ModalOptions, HTMLElement> implements ModalInterfa
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        SuiContainer.remove('Modal', this._id);
+        LevdwireContainer.remove('Modal', this._id);
     }
 
     /** @inheritdoc */

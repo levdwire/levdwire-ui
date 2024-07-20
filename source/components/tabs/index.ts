@@ -1,7 +1,7 @@
 import { TabsInterface } from "./interface";
 import { TabsOptions } from "./types";
 import { InstanceOptions } from "../../container/types";
-import SuiContainer from "../../container";
+import LevdwireContainer from "../../container";
 import Component from "../component";
 
 /**
@@ -57,7 +57,7 @@ class Tabs extends Component<TabsOptions, HTMLElement> implements TabsInterface 
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        SuiContainer.remove('Tabs', this._id);
+        LevdwireContainer.remove('Tabs', this._id);
     }
 
     /** @inheritdoc */

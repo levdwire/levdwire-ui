@@ -1,7 +1,7 @@
 import { DropdownInterface } from "./interface";
 import { DropdownOptions } from "./types";
 import { InstanceOptions } from "../../container/types";
-import SuiContainer from "../../container";
+import LevdwireContainer from "../../container";
 import Component from "../component";
 
 /**
@@ -57,7 +57,7 @@ class Dropdown extends Component<DropdownOptions, HTMLElement> implements Dropdo
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        SuiContainer.remove('Dropdown', this._id);
+        LevdwireContainer.remove('Dropdown', this._id);
     }
 
     /** @inheritdoc */

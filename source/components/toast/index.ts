@@ -1,7 +1,7 @@
 import { ToastInterface } from "./interface";
 import { ToastOptions } from "./types";
 import { InstanceOptions } from "../../container/types";
-import SuiContainer from "../../container";
+import LevdwireContainer from "../../container";
 import Component from "../component";
 
 /**
@@ -57,7 +57,7 @@ class Toast extends Component<ToastOptions, HTMLElement> implements ToastInterfa
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        SuiContainer.remove('Toast', this._id);
+        LevdwireContainer.remove('Toast', this._id);
     }
 
     /** @inheritdoc */

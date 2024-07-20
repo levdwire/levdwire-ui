@@ -1,7 +1,7 @@
 import { DrawerInterface } from "./interface";
 import { DrawerOptions } from "./types";
 import { InstanceOptions } from "../../container/types";
-import SuiContainer from "../../container";
+import LevdwireContainer from "../../container";
 import Component from "../component";
 
 /**
@@ -57,7 +57,7 @@ class Drawer extends Component<DrawerOptions, HTMLElement> implements DrawerInte
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        SuiContainer.remove('Drawer', this._id);
+        LevdwireContainer.remove('Drawer', this._id);
     }
 
     /** @inheritdoc */

@@ -1,7 +1,7 @@
 import { DismissInterface } from "./interface";
 import { DismissOptions } from "./types";
 import { InstanceOptions } from "../../container/types";
-import SuiContainer from "../../container";
+import LevdwireContainer from "../../container";
 import Component from "../component";
 
 /**
@@ -57,7 +57,7 @@ class Dismiss extends Component<DismissOptions, HTMLElement> implements DismissI
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        SuiContainer.remove('Dismiss', this._id);
+        LevdwireContainer.remove('Dismiss', this._id);
     }
 
     /** @inheritdoc */

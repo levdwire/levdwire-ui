@@ -1,7 +1,7 @@
 import { TooltipInterface } from "./interface";
 import { TooltipOptions } from "./types";
 import { InstanceOptions } from "../../container/types";
-import SuiContainer from "../../container";
+import LevdwireContainer from "../../container";
 import Component from "../component";
 
 /**
@@ -57,7 +57,7 @@ class Tooltip extends Component<TooltipOptions, HTMLElement> implements TooltipI
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        SuiContainer.remove('Tooltip', this._id);
+        LevdwireContainer.remove('Tooltip', this._id);
     }
 
     /** @inheritdoc */

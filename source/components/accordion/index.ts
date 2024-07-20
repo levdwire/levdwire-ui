@@ -1,7 +1,7 @@
 import { AccordionInterface } from "./interface";
 import { AccordionOptions } from "./types";
 import { InstanceOptions } from "../../container/types";
-import SuiContainer from "../../container";
+import LevdwireContainer from "../../container";
 import Component from "../component";
 
 /**
@@ -57,7 +57,7 @@ class Accordion extends Component<AccordionOptions, HTMLElement> implements Acco
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        SuiContainer.remove('Accordion', this._id);
+        LevdwireContainer.remove('Accordion', this._id);
     }
 
     /** @inheritdoc */

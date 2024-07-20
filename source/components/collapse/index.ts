@@ -1,7 +1,7 @@
 import { CollapseInterface } from "./interface";
 import { CollapseOptions } from "./types";
 import { InstanceOptions } from "../../container/types";
-import SuiContainer from "../../container";
+import LevdwireContainer from "../../container";
 import Component from "../component";
 
 /**
@@ -57,7 +57,7 @@ class Collapse extends Component<CollapseOptions, HTMLElement> implements Collap
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        SuiContainer.remove('Collapse', this._id);
+        LevdwireContainer.remove('Collapse', this._id);
     }
 
     /** @inheritdoc */

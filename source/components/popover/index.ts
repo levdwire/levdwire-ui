@@ -1,7 +1,7 @@
 import { PopoverInterface } from "./interface";
 import { PopoverOptions } from "./types";
 import { InstanceOptions } from "../../container/types";
-import SuiContainer from "../../container";
+import LevdwireContainer from "../../container";
 import Component from "../component";
 
 /**
@@ -57,7 +57,7 @@ class Popover extends Component<PopoverOptions, HTMLElement> implements PopoverI
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        SuiContainer.remove('Popover', this._id);
+        LevdwireContainer.remove('Popover', this._id);
     }
 
     /** @inheritdoc */

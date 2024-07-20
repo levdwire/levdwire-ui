@@ -1,7 +1,7 @@
 import { InputNumberInterface } from "./interface";
 import { InputNumberOptions } from "./types";
 import { InstanceOptions } from "../../../container/types";
-import SuiContainer from "../../../container";
+import LevdwireContainer from "../../../container";
 import Component from "../../component";
 
 /**
@@ -57,7 +57,7 @@ class InputNumber extends Component<InputNumberOptions, HTMLElement> implements 
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        SuiContainer.remove('InputNumber', this._id);
+        LevdwireContainer.remove('InputNumber', this._id);
     }
 
     /** @inheritdoc */

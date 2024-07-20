@@ -1,7 +1,7 @@
 import { TableInterface } from "./interface";
 import { TableOptions } from "./types";
 import { InstanceOptions } from "../../container/types";
-import SuiContainer from "../../container";
+import LevdwireContainer from "../../container";
 import Component from "../component";
 
 /**
@@ -57,7 +57,7 @@ class Table extends Component<TableOptions, HTMLElement> implements TableInterfa
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        SuiContainer.remove('Table', this._id);
+        LevdwireContainer.remove('Table', this._id);
     }
 
     /** @inheritdoc */

@@ -1,7 +1,7 @@
 import { ScrollInterface } from "./interface";
 import { ScrollOptions } from "./types";
 import { InstanceOptions } from "../../container/types";
-import SuiContainer from "../../container";
+import LevdwireContainer from "../../container";
 import Component from "../component";
 
 /**
@@ -57,7 +57,7 @@ class Scroll extends Component<ScrollOptions, HTMLElement> implements ScrollInte
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        SuiContainer.remove('Scroll', this._id);
+        LevdwireContainer.remove('Scroll', this._id);
     }
 
     /** @inheritdoc */

@@ -1,7 +1,7 @@
 import { StepperInterface } from "./interface";
 import { StepperOptions } from "./types";
 import { InstanceOptions } from "../../container/types";
-import SuiContainer from "../../container";
+import LevdwireContainer from "../../container";
 import Component from "../component";
 
 /**
@@ -57,7 +57,7 @@ class Stepper extends Component<StepperOptions, HTMLElement> implements StepperI
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        SuiContainer.remove('Stepper', this._id);
+        LevdwireContainer.remove('Stepper', this._id);
     }
 
     /** @inheritdoc */

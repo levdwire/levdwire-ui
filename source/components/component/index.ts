@@ -1,7 +1,7 @@
 import { ComponentInterface } from "./interface";
 import { ContainerInterface } from "../../container/interface";
 import { InstanceOptions } from "../../container/types";
-import SuiContainer from "../../container";
+import LevdwireContainer from "../../container";
 import { ComponentOptions } from "./types";
 
 /**
@@ -83,7 +83,7 @@ export default abstract class Component<O = ComponentOptions, E = HTMLElement> i
         this.initialize();
 
         // Add the component's instance to the container.
-        SuiContainer.add(
+        LevdwireContainer.add(
             component,
             this,
             this._id,

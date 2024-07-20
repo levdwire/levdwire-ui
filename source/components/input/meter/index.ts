@@ -1,7 +1,7 @@
 import { InputMeterInterface } from "./interface";
 import { InputMeterOptions } from "./types";
 import { InstanceOptions } from "../../../container/types";
-import SuiContainer from "../../../container";
+import LevdwireContainer from "../../../container";
 import Component from "../../component";
 
 /**
@@ -57,7 +57,7 @@ class InputMeter extends Component<InputMeterOptions, HTMLElement> implements In
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        SuiContainer.remove('InputMeter', this._id);
+        LevdwireContainer.remove('InputMeter', this._id);
     }
 
     /** @inheritdoc */

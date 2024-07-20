@@ -284,7 +284,7 @@ declare global {
          *
          * @type {Container}
          */
-        SuiContainer: any;
+        LevdwireContainer: any;
 
         /**
          * <b>Levdwire</b> - Next generation user and application interface kit for developers.

@@ -1,7 +1,7 @@
 import { InputImageInterface } from "./interface";
 import { InputImageOptions } from "./types";
 import { InstanceOptions } from "../../../container/types";
-import SuiContainer from "../../../container";
+import LevdwireContainer from "../../../container";
 import Component from "../../component";
 
 /**
@@ -57,7 +57,7 @@ class InputImage extends Component<InputImageOptions, HTMLElement> implements In
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        SuiContainer.remove('InputImage', this._id);
+        LevdwireContainer.remove('InputImage', this._id);
     }
 
     /** @inheritdoc */

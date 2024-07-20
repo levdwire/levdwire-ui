@@ -1,7 +1,7 @@
 import { MenuInterface } from "./interface";
 import { MenuOptions } from "./types";
 import { InstanceOptions } from "../../container/types";
-import SuiContainer from "../../container";
+import LevdwireContainer from "../../container";
 import Component from "../component";
 
 /**
@@ -57,7 +57,7 @@ class Menu extends Component<MenuOptions, HTMLElement> implements MenuInterface 
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        SuiContainer.remove('Menu', this._id);
+        LevdwireContainer.remove('Menu', this._id);
     }
 
     /** @inheritdoc */

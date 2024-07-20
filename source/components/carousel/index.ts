@@ -1,7 +1,7 @@
 import { CarouselInterface } from "./interface";
 import { CarouselOptions } from "./types";
 import { InstanceOptions } from "../../container/types";
-import SuiContainer from "../../container";
+import LevdwireContainer from "../../container";
 import Component from "../component";
 
 /**
@@ -57,7 +57,7 @@ class Carousel extends Component<CarouselOptions, HTMLElement> implements Carous
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        SuiContainer.remove('Carousel', this._id);
+        LevdwireContainer.remove('Carousel', this._id);
     }
 
     /** @inheritdoc */
