@@ -1,5 +1,5 @@
-import { ComponentInterface } from "../component/interface";
-import { ModalOptions } from "./types";
+import { ComponentInterface } from '../component/interface'
+import { ModalOptions } from './types'
 
 /**
  * @name         ModalInterface - Levdwire
@@ -9,6 +9,7 @@ import { ModalOptions } from "./types";
  * @license      The MIT License (https://levdwire.com/docs/license)
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
-export declare interface ModalInterface extends ComponentInterface<ModalOptions, HTMLElement> {
+export declare interface ModalInterface
+    extends ComponentInterface<ModalOptions, HTMLElement> {
     // ...
 }

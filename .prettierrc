@@ -1,0 +1,9 @@
+{
+    "trailingComma"     : "es5",
+    "semi"              : false,
+    "singleQuote"       : true,
+    "eslintIntegration" : true,
+    "tabWidth"          : 4,
+    "endOfLine"         : "auto",
+    "plugins"           : []
+}

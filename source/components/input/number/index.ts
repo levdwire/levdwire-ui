@@ -1,8 +1,8 @@
-import { InputNumberInterface } from "./interface";
-import { InputNumberOptions } from "./types";
-import { InstanceOptions } from "../../../container/types";
-import LevdwireContainer from "../../../container";
-import Component from "../../component";
+import { InputNumberInterface } from './interface'
+import { InputNumberOptions } from './types'
+import { InstanceOptions } from '../../../container/types'
+import LevdwireContainer from '../../../container'
+import Component from '../../component'
 
 /**
  * Default options for the number input instance.
@@ -11,7 +11,7 @@ import Component from "../../component";
  */
 const Default: InputNumberOptions = {
     // ...
-};
+}
 
 /**
  * Default options for the component instance.
@@ -21,7 +21,7 @@ const Default: InputNumberOptions = {
 const DefaultInstance: InstanceOptions = {
     id: null,
     override: true,
-};
+}
 
 /**
  * @name         InputNumber - Levdwire
@@ -31,7 +31,10 @@ const DefaultInstance: InstanceOptions = {
  * @license      The MIT License (https://levdwire.com/docs/license)
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
-class InputNumber extends Component<InputNumberOptions, HTMLElement> implements InputNumberInterface {
+class InputNumber
+    extends Component<InputNumberOptions, HTMLElement>
+    implements InputNumberInterface
+{
     /**
      * Create a new number input instance.
      *
@@ -46,7 +49,7 @@ class InputNumber extends Component<InputNumberOptions, HTMLElement> implements 
         options: InputNumberOptions = Default,
         instanceOptions: InstanceOptions = DefaultInstance
     ) {
-        super('InputNumber', element, { ...Default ,...options }, instanceOptions);
+        super('InputNumber', element, { ...Default, ...options }, instanceOptions)
     }
 
     /** @inheritdoc */
@@ -57,7 +60,7 @@ class InputNumber extends Component<InputNumberOptions, HTMLElement> implements 
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        LevdwireContainer.remove('InputNumber', this._id);
+        LevdwireContainer.remove('InputNumber', this._id)
     }
 
     /** @inheritdoc */
@@ -78,11 +81,11 @@ export function initializeInputNumbers(): void {
 // Check if a valid dom element exists.
 if (typeof window !== 'undefined') {
     // Identify the "InputNumber" component.
-    window.InputNumber = InputNumber;
+    window.InputNumber = InputNumber
 
     // Define the "InputNumber" initialize function.
-    window.initializeInputNumbers = initializeInputNumbers;
+    window.initializeInputNumbers = initializeInputNumbers
 }
 
 // Export
-export default InputNumber;
+export default InputNumber

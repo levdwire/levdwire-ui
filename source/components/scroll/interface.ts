@@ -1,5 +1,5 @@
-import { ComponentInterface } from "../component/interface";
-import { ScrollOptions } from "./types";
+import { ComponentInterface } from '../component/interface'
+import { ScrollOptions } from './types'
 
 /**
  * @name         ScrollInterface - Levdwire
@@ -9,6 +9,7 @@ import { ScrollOptions } from "./types";
  * @license      The MIT License (https://levdwire.com/docs/license)
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
-export declare interface ScrollInterface extends ComponentInterface<ScrollOptions, HTMLElement> {
+export declare interface ScrollInterface
+    extends ComponentInterface<ScrollOptions, HTMLElement> {
     // ...
 }

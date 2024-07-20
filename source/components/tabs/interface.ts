@@ -1,5 +1,5 @@
-import { ComponentInterface } from "../component/interface";
-import { TabsOptions } from "./types";
+import { ComponentInterface } from '../component/interface'
+import { TabsOptions } from './types'
 
 /**
  * @name         TabsInterface - Levdwire
@@ -9,6 +9,7 @@ import { TabsOptions } from "./types";
  * @license      The MIT License (https://levdwire.com/docs/license)
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
-export declare interface TabsInterface extends ComponentInterface<TabsOptions, HTMLElement> {
+export declare interface TabsInterface
+    extends ComponentInterface<TabsOptions, HTMLElement> {
     // ...
 }

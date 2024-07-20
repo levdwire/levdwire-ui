@@ -1,5 +1,5 @@
-import { ComponentInterface } from "../component/interface";
-import { AccordionOptions } from "./types";
+import { ComponentInterface } from '../component/interface'
+import { AccordionOptions } from './types'
 
 /**
  * @name         AccordionInterface - Levdwire
@@ -9,6 +9,7 @@ import { AccordionOptions } from "./types";
  * @license      The MIT License (https://levdwire.com/docs/license)
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
-export declare interface AccordionInterface extends ComponentInterface<AccordionOptions, HTMLElement>  {
+export declare interface AccordionInterface
+    extends ComponentInterface<AccordionOptions, HTMLElement> {
     // ...
 }

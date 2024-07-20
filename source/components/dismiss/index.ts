@@ -1,8 +1,8 @@
-import { DismissInterface } from "./interface";
-import { DismissOptions } from "./types";
-import { InstanceOptions } from "../../container/types";
-import LevdwireContainer from "../../container";
-import Component from "../component";
+import { DismissInterface } from './interface'
+import { DismissOptions } from './types'
+import { InstanceOptions } from '../../container/types'
+import LevdwireContainer from '../../container'
+import Component from '../component'
 
 /**
  * Default options for the dismiss instance.
@@ -11,7 +11,7 @@ import Component from "../component";
  */
 const Default: DismissOptions = {
     // ...
-};
+}
 
 /**
  * Default options for the component instance.
@@ -21,7 +21,7 @@ const Default: DismissOptions = {
 const DefaultInstance: InstanceOptions = {
     id: null,
     override: true,
-};
+}
 
 /**
  * @name         Dismiss - Levdwire
@@ -46,7 +46,7 @@ class Dismiss extends Component<DismissOptions, HTMLElement> implements DismissI
         options: DismissOptions = Default,
         instanceOptions: InstanceOptions = DefaultInstance
     ) {
-        super('Dismiss', element, { ...Default ,...options }, instanceOptions);
+        super('Dismiss', element, { ...Default, ...options }, instanceOptions)
     }
 
     /** @inheritdoc */
@@ -57,7 +57,7 @@ class Dismiss extends Component<DismissOptions, HTMLElement> implements DismissI
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        LevdwireContainer.remove('Dismiss', this._id);
+        LevdwireContainer.remove('Dismiss', this._id)
     }
 
     /** @inheritdoc */
@@ -78,11 +78,11 @@ export function initializeDismisses(): void {
 // Check if a valid dom element exists.
 if (typeof window !== 'undefined') {
     // Identify the "Dismiss" component.
-    window.Dismiss = Dismiss;
+    window.Dismiss = Dismiss
 
     // Define the "Dismiss" initialize function.
-    window.initializeDismisses = initializeDismisses;
+    window.initializeDismisses = initializeDismisses
 }
 
 // Export
-export default Dismiss;
+export default Dismiss

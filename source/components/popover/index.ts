@@ -1,8 +1,8 @@
-import { PopoverInterface } from "./interface";
-import { PopoverOptions } from "./types";
-import { InstanceOptions } from "../../container/types";
-import LevdwireContainer from "../../container";
-import Component from "../component";
+import { PopoverInterface } from './interface'
+import { PopoverOptions } from './types'
+import { InstanceOptions } from '../../container/types'
+import LevdwireContainer from '../../container'
+import Component from '../component'
 
 /**
  * Default options for the popover instance.
@@ -11,7 +11,7 @@ import Component from "../component";
  */
 const Default: PopoverOptions = {
     // ...
-};
+}
 
 /**
  * Default options for the component instance.
@@ -21,7 +21,7 @@ const Default: PopoverOptions = {
 const DefaultInstance: InstanceOptions = {
     id: null,
     override: true,
-};
+}
 
 /**
  * @name         Popover - Levdwire
@@ -46,7 +46,7 @@ class Popover extends Component<PopoverOptions, HTMLElement> implements PopoverI
         options: PopoverOptions = Default,
         instanceOptions: InstanceOptions = DefaultInstance
     ) {
-        super('Popover', element, { ...Default ,...options }, instanceOptions);
+        super('Popover', element, { ...Default, ...options }, instanceOptions)
     }
 
     /** @inheritdoc */
@@ -57,7 +57,7 @@ class Popover extends Component<PopoverOptions, HTMLElement> implements PopoverI
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        LevdwireContainer.remove('Popover', this._id);
+        LevdwireContainer.remove('Popover', this._id)
     }
 
     /** @inheritdoc */
@@ -78,11 +78,11 @@ export function initializePopovers(): void {
 // Check if a valid dom element exists.
 if (typeof window !== 'undefined') {
     // Identify the "Popover" component.
-    window.Popover = Popover;
+    window.Popover = Popover
 
     // Define the "Popover" initialize function.
-    window.initializePopovers = initializePopovers;
+    window.initializePopovers = initializePopovers
 }
 
 // Export
-export default Popover;
+export default Popover

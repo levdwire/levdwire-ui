@@ -1,4 +1,4 @@
-import { EventsInterface } from "./interface";
+import { EventsInterface } from './interface'
 
 /**
  * @name         Events - Levdwire
@@ -10,10 +10,10 @@ import { EventsInterface } from "./interface";
  **/
 class Events implements EventsInterface {
     /** @inheritdoc */
-    _type: string;
+    _type: string
 
     /** @inheritdoc */
-    _functions: EventListener[];
+    _functions: EventListener[]
 
     /**
      * Create a new events instance.
@@ -22,10 +22,10 @@ class Events implements EventsInterface {
      */
     constructor(type: string, functions: EventListener[] = []) {
         // Set event type.
-        this._type = type;
+        this._type = type
 
         // Set event functions.
-        this._functions = functions;
+        this._functions = functions
     }
 
     /** @inheritdoc */
@@ -35,11 +35,11 @@ class Events implements EventsInterface {
             // Check if a valid dom element exists.
             if (typeof window !== 'undefined') {
                 // Add a new event listener with the specified type.
-                window.addEventListener(this._type, tFunction);
+                window.addEventListener(this._type, tFunction)
             }
-        });
+        })
     }
 }
 
 // Srylius :: Export
-export default Events;
+export default Events

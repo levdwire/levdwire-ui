@@ -1,8 +1,8 @@
-import { ComponentInterface } from "./interface";
-import { ContainerInterface } from "../../container/interface";
-import { InstanceOptions } from "../../container/types";
-import LevdwireContainer from "../../container";
-import { ComponentOptions } from "./types";
+import { ComponentInterface } from './interface'
+import { ContainerInterface } from '../../container/interface'
+import { InstanceOptions } from '../../container/types'
+import LevdwireContainer from '../../container'
+import { ComponentOptions } from './types'
 
 /**
  * Default options for the component.
@@ -11,7 +11,7 @@ import { ComponentOptions } from "./types";
  */
 const Default: ComponentOptions = {
     // ...
-};
+}
 
 /**
  * Default options for the component instance.
@@ -23,7 +23,7 @@ const DefaultInstance: InstanceOptions = {
     id: null,
     /** @inheritDoc */
     override: true,
-};
+}
 
 /**
  * @name         Component - Levdwire
@@ -35,18 +35,20 @@ const DefaultInstance: InstanceOptions = {
  *
  * @template O, E
  **/
-export default abstract class Component<O = ComponentOptions, E = HTMLElement> implements ComponentInterface<O, E> {
+export default abstract class Component<O = ComponentOptions, E = HTMLElement>
+    implements ComponentInterface<O, E>
+{
     /** @inheritDoc */
-    _id: string;
+    _id: string
 
     /** @inheritDoc */
-    _element: E;
+    _element: E
 
     /** @inheritDoc */
-    _options: O;
+    _options: O
 
     /** @inheritDoc */
-    _initialized: boolean;
+    _initialized: boolean
 
     /**
      * Create a new component instance.
@@ -67,45 +69,40 @@ export default abstract class Component<O = ComponentOptions, E = HTMLElement> i
         // Set the component's unique ID for the container.
         this._id = instanceOptions.id
             ? instanceOptions.id
-            // @ts-ignore
-            : element.id;
+            : // @ts-ignore
+              element.id
 
         // Set the html element of the component.
-        this._element = element;
+        this._element = element
 
         // Set the options of the component.
-        this._options = { ...Default , ...options };
+        this._options = { ...Default, ...options }
 
         // Set the initialization state of the component.
-        this._initialized = false;
+        this._initialized = false
 
         // Initialize component.
-        this.initialize();
+        this.initialize()
 
         // Add the component's instance to the container.
-        LevdwireContainer.add(
-            component,
-            this,
-            this._id,
-            instanceOptions.override
-        );
+        LevdwireContainer.add(component, this, this._id, instanceOptions.override)
     }
 
     /** @inheritdoc */
-    abstract initialize(): any;
+    abstract initialize(): any
 
     /** @inheritdoc */
-    abstract remove(): boolean | void;
+    abstract remove(): boolean | void
 
     /** @inheritdoc */
-    abstract destroy(): boolean | void;
+    abstract destroy(): boolean | void
 
     /** @inheritdoc */
     destroyAndRemove(): boolean | void {
         // Destroy existing instance from container.
-        this.destroy();
+        this.destroy()
 
         // Remove existing instance from container.
-        this.remove();
+        this.remove()
     }
 }

@@ -1,8 +1,8 @@
-import { TabsInterface } from "./interface";
-import { TabsOptions } from "./types";
-import { InstanceOptions } from "../../container/types";
-import LevdwireContainer from "../../container";
-import Component from "../component";
+import { TabsInterface } from './interface'
+import { TabsOptions } from './types'
+import { InstanceOptions } from '../../container/types'
+import LevdwireContainer from '../../container'
+import Component from '../component'
 
 /**
  * Default options for the tabs instance.
@@ -11,7 +11,7 @@ import Component from "../component";
  */
 const Default: TabsOptions = {
     // ...
-};
+}
 
 /**
  * Default options for the component instance.
@@ -21,7 +21,7 @@ const Default: TabsOptions = {
 const DefaultInstance: InstanceOptions = {
     id: null,
     override: true,
-};
+}
 
 /**
  * @name         Tabs - Levdwire
@@ -46,7 +46,7 @@ class Tabs extends Component<TabsOptions, HTMLElement> implements TabsInterface 
         options: TabsOptions = Default,
         instanceOptions: InstanceOptions = DefaultInstance
     ) {
-        super('Tabs', element, { ...Default ,...options }, instanceOptions);
+        super('Tabs', element, { ...Default, ...options }, instanceOptions)
     }
 
     /** @inheritdoc */
@@ -57,7 +57,7 @@ class Tabs extends Component<TabsOptions, HTMLElement> implements TabsInterface 
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        LevdwireContainer.remove('Tabs', this._id);
+        LevdwireContainer.remove('Tabs', this._id)
     }
 
     /** @inheritdoc */
@@ -78,11 +78,11 @@ export function initializeTabs(): void {
 // Check if a valid dom element exists.
 if (typeof window !== 'undefined') {
     // Identify the "Tabs" component.
-    window.Tabs = Tabs;
+    window.Tabs = Tabs
 
     // Define the "Tabs" initialize function.
-    window.initializeTabs = initializeTabs;
+    window.initializeTabs = initializeTabs
 }
 
 // Export
-export default Tabs;
+export default Tabs

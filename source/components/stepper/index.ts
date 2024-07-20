@@ -1,8 +1,8 @@
-import { StepperInterface } from "./interface";
-import { StepperOptions } from "./types";
-import { InstanceOptions } from "../../container/types";
-import LevdwireContainer from "../../container";
-import Component from "../component";
+import { StepperInterface } from './interface'
+import { StepperOptions } from './types'
+import { InstanceOptions } from '../../container/types'
+import LevdwireContainer from '../../container'
+import Component from '../component'
 
 /**
  * Default options for the stepper instance.
@@ -11,7 +11,7 @@ import Component from "../component";
  */
 const Default: StepperOptions = {
     // ...
-};
+}
 
 /**
  * Default options for the component instance.
@@ -21,7 +21,7 @@ const Default: StepperOptions = {
 const DefaultInstance: InstanceOptions = {
     id: null,
     override: true,
-};
+}
 
 /**
  * @name         Stepper - Levdwire
@@ -46,7 +46,7 @@ class Stepper extends Component<StepperOptions, HTMLElement> implements StepperI
         options: StepperOptions = Default,
         instanceOptions: InstanceOptions = DefaultInstance
     ) {
-        super('Stepper', element, { ...Default ,...options }, instanceOptions);
+        super('Stepper', element, { ...Default, ...options }, instanceOptions)
     }
 
     /** @inheritdoc */
@@ -57,7 +57,7 @@ class Stepper extends Component<StepperOptions, HTMLElement> implements StepperI
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        LevdwireContainer.remove('Stepper', this._id);
+        LevdwireContainer.remove('Stepper', this._id)
     }
 
     /** @inheritdoc */
@@ -78,11 +78,11 @@ export function initializeSteppers(): void {
 // Check if a valid dom element exists.
 if (typeof window !== 'undefined') {
     // Identify the "Stepper" component.
-    window.Stepper = Stepper;
+    window.Stepper = Stepper
 
     // Define the "Stepper" initialize function.
-    window.initializeSteppers = initializeSteppers;
+    window.initializeSteppers = initializeSteppers
 }
 
 // Export
-export default Stepper;
+export default Stepper

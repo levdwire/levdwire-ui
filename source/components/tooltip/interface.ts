@@ -1,5 +1,5 @@
-import { ComponentInterface } from "../component/interface";
-import { TooltipOptions } from "./types";
+import { ComponentInterface } from '../component/interface'
+import { TooltipOptions } from './types'
 
 /**
  * @name         TooltipInterface - Levdwire
@@ -9,6 +9,7 @@ import { TooltipOptions } from "./types";
  * @license      The MIT License (https://levdwire.com/docs/license)
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
-export declare interface TooltipInterface extends ComponentInterface<TooltipOptions, HTMLElement> {
+export declare interface TooltipInterface
+    extends ComponentInterface<TooltipOptions, HTMLElement> {
     // ...
 }

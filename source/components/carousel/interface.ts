@@ -1,5 +1,5 @@
-import { ComponentInterface } from "../component/interface";
-import { CarouselOptions } from "./types";
+import { ComponentInterface } from '../component/interface'
+import { CarouselOptions } from './types'
 
 /**
  * @name         CarouselInterface - Levdwire
@@ -9,6 +9,7 @@ import { CarouselOptions } from "./types";
  * @license      The MIT License (https://levdwire.com/docs/license)
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
-export declare interface CarouselInterface extends ComponentInterface<CarouselOptions, HTMLElement> {
+export declare interface CarouselInterface
+    extends ComponentInterface<CarouselOptions, HTMLElement> {
     // ...
 }

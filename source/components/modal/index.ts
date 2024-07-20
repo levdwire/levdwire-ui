@@ -1,8 +1,8 @@
-import { ModalInterface } from "./interface";
-import { ModalOptions } from "./types";
-import { InstanceOptions } from "../../container/types";
-import LevdwireContainer from "../../container";
-import Component from "../component";
+import { ModalInterface } from './interface'
+import { ModalOptions } from './types'
+import { InstanceOptions } from '../../container/types'
+import LevdwireContainer from '../../container'
+import Component from '../component'
 
 /**
  * Default options for the modal instance.
@@ -11,7 +11,7 @@ import Component from "../component";
  */
 const Default: ModalOptions = {
     // ...
-};
+}
 
 /**
  * Default options for the component instance.
@@ -21,7 +21,7 @@ const Default: ModalOptions = {
 const DefaultInstance: InstanceOptions = {
     id: null,
     override: true,
-};
+}
 
 /**
  * @name         Modal - Levdwire
@@ -46,7 +46,7 @@ class Modal extends Component<ModalOptions, HTMLElement> implements ModalInterfa
         options: ModalOptions = Default,
         instanceOptions: InstanceOptions = DefaultInstance
     ) {
-        super('Modal', element, { ...Default ,...options }, instanceOptions);
+        super('Modal', element, { ...Default, ...options }, instanceOptions)
     }
 
     /** @inheritdoc */
@@ -57,7 +57,7 @@ class Modal extends Component<ModalOptions, HTMLElement> implements ModalInterfa
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        LevdwireContainer.remove('Modal', this._id);
+        LevdwireContainer.remove('Modal', this._id)
     }
 
     /** @inheritdoc */
@@ -78,11 +78,11 @@ export function initializeModals(): void {
 // Check if a valid dom element exists.
 if (typeof window !== 'undefined') {
     // Identify the "Modal" component.
-    window.Modal = Modal;
+    window.Modal = Modal
 
     // Define the "Modal" initialize function.
-    window.initializeModals = initializeModals;
+    window.initializeModals = initializeModals
 }
 
 // Export
-export default Modal;
+export default Modal

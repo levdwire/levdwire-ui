@@ -1,21 +1,21 @@
-import { AccordionInterface } from "../components/accordion/interface";
-import { CarouselInterface } from "../components/carousel/interface";
-import { CollapseInterface } from "../components/collapse/interface";
-import { DismissInterface } from "../components/dismiss/interface";
-import { DrawerInterface } from "../components/drawer/interface";
-import { DropdownInterface } from "../components/dropdown/interface";
-import { InputImageInterface } from "../components/input/image/interface";
-import { InputMeterInterface } from "../components/input/meter/interface";
-import { InputNumberInterface } from "../components/input/number/interface";
-import { MenuInterface } from "../components/menu/interface";
-import { ModalInterface } from "../components/modal/interface";
-import { PopoverInterface } from "../components/popover/interface";
-import { ScrollInterface } from "../components/scroll/interface";
-import { StepperInterface } from "../components/stepper/interface";
-import { TableInterface } from "../components/table/interface";
-import { TabsInterface } from "../components/tabs/interface";
-import { ToastInterface } from "../components/toast/interface";
-import { TooltipInterface } from "../components/tooltip/interface";
+import { AccordionInterface } from '../components/accordion/interface'
+import { CarouselInterface } from '../components/carousel/interface'
+import { CollapseInterface } from '../components/collapse/interface'
+import { DismissInterface } from '../components/dismiss/interface'
+import { DrawerInterface } from '../components/drawer/interface'
+import { DropdownInterface } from '../components/dropdown/interface'
+import { InputImageInterface } from '../components/input/image/interface'
+import { InputMeterInterface } from '../components/input/meter/interface'
+import { InputNumberInterface } from '../components/input/number/interface'
+import { MenuInterface } from '../components/menu/interface'
+import { ModalInterface } from '../components/modal/interface'
+import { PopoverInterface } from '../components/popover/interface'
+import { ScrollInterface } from '../components/scroll/interface'
+import { StepperInterface } from '../components/stepper/interface'
+import { TableInterface } from '../components/table/interface'
+import { TabsInterface } from '../components/tabs/interface'
+import { ToastInterface } from '../components/toast/interface'
+import { TooltipInterface } from '../components/tooltip/interface'
 
 /**
  * @name         Instances - Levdwire

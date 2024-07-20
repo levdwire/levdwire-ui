@@ -1,8 +1,8 @@
-import { TooltipInterface } from "./interface";
-import { TooltipOptions } from "./types";
-import { InstanceOptions } from "../../container/types";
-import LevdwireContainer from "../../container";
-import Component from "../component";
+import { TooltipInterface } from './interface'
+import { TooltipOptions } from './types'
+import { InstanceOptions } from '../../container/types'
+import LevdwireContainer from '../../container'
+import Component from '../component'
 
 /**
  * Default options for the tooltip instance.
@@ -11,7 +11,7 @@ import Component from "../component";
  */
 const Default: TooltipOptions = {
     // ...
-};
+}
 
 /**
  * Default options for the component instance.
@@ -21,7 +21,7 @@ const Default: TooltipOptions = {
 const DefaultInstance: InstanceOptions = {
     id: null,
     override: true,
-};
+}
 
 /**
  * @name         Tooltip - Levdwire
@@ -46,7 +46,7 @@ class Tooltip extends Component<TooltipOptions, HTMLElement> implements TooltipI
         options: TooltipOptions = Default,
         instanceOptions: InstanceOptions = DefaultInstance
     ) {
-        super('Tooltip', element, { ...Default ,...options }, instanceOptions);
+        super('Tooltip', element, { ...Default, ...options }, instanceOptions)
     }
 
     /** @inheritdoc */
@@ -57,7 +57,7 @@ class Tooltip extends Component<TooltipOptions, HTMLElement> implements TooltipI
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        LevdwireContainer.remove('Tooltip', this._id);
+        LevdwireContainer.remove('Tooltip', this._id)
     }
 
     /** @inheritdoc */
@@ -78,11 +78,11 @@ export function initializeTooltips(): void {
 // Check if a valid dom element exists.
 if (typeof window !== 'undefined') {
     // Identify the "Tooltip" component.
-    window.Tooltip = Tooltip;
+    window.Tooltip = Tooltip
 
     // Define the "Tooltip" initialize function.
-    window.initializeTooltips = initializeTooltips;
+    window.initializeTooltips = initializeTooltips
 }
 
 // Export
-export default Tooltip;
+export default Tooltip

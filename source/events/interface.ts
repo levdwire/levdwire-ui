@@ -12,19 +12,19 @@ export declare interface EventsInterface {
      *
      * @type {string}
      */
-    _type: string;
+    _type: string
 
     /**
      * The event functions.
      *
      * @type {EventListener[]}
      */
-    _functions: EventListener[];
+    _functions: EventListener[]
 
     /**
      * Register all event listeners.
      *
      * @return {void}
      */
-    initialize(): void;
+    initialize(): void
 }

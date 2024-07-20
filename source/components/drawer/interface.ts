@@ -1,5 +1,5 @@
-import { ComponentInterface } from "../component/interface";
-import { DrawerOptions } from "./types";
+import { ComponentInterface } from '../component/interface'
+import { DrawerOptions } from './types'
 
 /**
  * @name         DrawerInterface - Levdwire
@@ -9,6 +9,7 @@ import { DrawerOptions } from "./types";
  * @license      The MIT License (https://levdwire.com/docs/license)
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
-export declare interface DrawerInterface extends ComponentInterface<DrawerOptions, HTMLElement> {
+export declare interface DrawerInterface
+    extends ComponentInterface<DrawerOptions, HTMLElement> {
     // ...
 }

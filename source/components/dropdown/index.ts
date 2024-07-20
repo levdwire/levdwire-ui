@@ -1,8 +1,8 @@
-import { DropdownInterface } from "./interface";
-import { DropdownOptions } from "./types";
-import { InstanceOptions } from "../../container/types";
-import LevdwireContainer from "../../container";
-import Component from "../component";
+import { DropdownInterface } from './interface'
+import { DropdownOptions } from './types'
+import { InstanceOptions } from '../../container/types'
+import LevdwireContainer from '../../container'
+import Component from '../component'
 
 /**
  * Default options for the dropdown instance.
@@ -11,7 +11,7 @@ import Component from "../component";
  */
 const Default: DropdownOptions = {
     // ...
-};
+}
 
 /**
  * Default options for the component instance.
@@ -21,7 +21,7 @@ const Default: DropdownOptions = {
 const DefaultInstance: InstanceOptions = {
     id: null,
     override: true,
-};
+}
 
 /**
  * @name         Dropdown - Levdwire
@@ -31,7 +31,10 @@ const DefaultInstance: InstanceOptions = {
  * @license      The MIT License (https://levdwire.com/docs/license)
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
-class Dropdown extends Component<DropdownOptions, HTMLElement> implements DropdownInterface {
+class Dropdown
+    extends Component<DropdownOptions, HTMLElement>
+    implements DropdownInterface
+{
     /**
      * Create a new dropdown instance.
      *
@@ -46,7 +49,7 @@ class Dropdown extends Component<DropdownOptions, HTMLElement> implements Dropdo
         options: DropdownOptions = Default,
         instanceOptions: InstanceOptions = DefaultInstance
     ) {
-        super('Dropdown', element, { ...Default ,...options }, instanceOptions);
+        super('Dropdown', element, { ...Default, ...options }, instanceOptions)
     }
 
     /** @inheritdoc */
@@ -57,7 +60,7 @@ class Dropdown extends Component<DropdownOptions, HTMLElement> implements Dropdo
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        LevdwireContainer.remove('Dropdown', this._id);
+        LevdwireContainer.remove('Dropdown', this._id)
     }
 
     /** @inheritdoc */
@@ -78,11 +81,11 @@ export function initializeDropdowns(): void {
 // Check if a valid dom element exists.
 if (typeof window !== 'undefined') {
     // Identify the "Dropdown" component.
-    window.Dropdown = Dropdown;
+    window.Dropdown = Dropdown
 
     // Define the "Dropdown" initialize function.
-    window.initializeDropdowns = initializeDropdowns;
+    window.initializeDropdowns = initializeDropdowns
 }
 
 // Export
-export default Dropdown;
+export default Dropdown

@@ -1,5 +1,5 @@
-import { ComponentInterface } from "../component/interface";
-import { CollapseOptions } from "./types";
+import { ComponentInterface } from '../component/interface'
+import { CollapseOptions } from './types'
 
 /**
  * @name         CollapseInterface - Levdwire
@@ -9,6 +9,7 @@ import { CollapseOptions } from "./types";
  * @license      The MIT License (https://levdwire.com/docs/license)
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
-export declare interface CollapseInterface extends ComponentInterface<CollapseOptions, HTMLElement> {
+export declare interface CollapseInterface
+    extends ComponentInterface<CollapseOptions, HTMLElement> {
     // ...
 }

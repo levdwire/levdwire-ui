@@ -1,5 +1,5 @@
-import { ComponentInterface } from "../../component/interface";
-import { InputNumberOptions } from "./types";
+import { ComponentInterface } from '../../component/interface'
+import { InputNumberOptions } from './types'
 
 /**
  * @name         InputNumberInterface - Levdwire
@@ -9,6 +9,7 @@ import { InputNumberOptions } from "./types";
  * @license      The MIT License (https://levdwire.com/docs/license)
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
-export declare interface InputNumberInterface extends ComponentInterface<InputNumberOptions, HTMLElement> {
+export declare interface InputNumberInterface
+    extends ComponentInterface<InputNumberOptions, HTMLElement> {
     // ...
 }

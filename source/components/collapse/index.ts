@@ -1,8 +1,8 @@
-import { CollapseInterface } from "./interface";
-import { CollapseOptions } from "./types";
-import { InstanceOptions } from "../../container/types";
-import LevdwireContainer from "../../container";
-import Component from "../component";
+import { CollapseInterface } from './interface'
+import { CollapseOptions } from './types'
+import { InstanceOptions } from '../../container/types'
+import LevdwireContainer from '../../container'
+import Component from '../component'
 
 /**
  * Default options for the accordion instance.
@@ -11,7 +11,7 @@ import Component from "../component";
  */
 const Default: CollapseOptions = {
     // ...
-};
+}
 
 /**
  * Default options for the component instance.
@@ -21,7 +21,7 @@ const Default: CollapseOptions = {
 const DefaultInstance: InstanceOptions = {
     id: null,
     override: true,
-};
+}
 
 /**
  * @name         Collapse - Levdwire
@@ -31,7 +31,10 @@ const DefaultInstance: InstanceOptions = {
  * @license      The MIT License (https://levdwire.com/docs/license)
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
-class Collapse extends Component<CollapseOptions, HTMLElement> implements CollapseInterface {
+class Collapse
+    extends Component<CollapseOptions, HTMLElement>
+    implements CollapseInterface
+{
     /**
      * Create a new accordion instance.
      *
@@ -46,7 +49,7 @@ class Collapse extends Component<CollapseOptions, HTMLElement> implements Collap
         options: CollapseOptions = Default,
         instanceOptions: InstanceOptions = DefaultInstance
     ) {
-        super('Collapse', element, { ...Default ,...options }, instanceOptions);
+        super('Collapse', element, { ...Default, ...options }, instanceOptions)
     }
 
     /** @inheritdoc */
@@ -57,7 +60,7 @@ class Collapse extends Component<CollapseOptions, HTMLElement> implements Collap
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        LevdwireContainer.remove('Collapse', this._id);
+        LevdwireContainer.remove('Collapse', this._id)
     }
 
     /** @inheritdoc */
@@ -78,11 +81,11 @@ export function initializeCollapses(): void {
 // Check if a valid dom element exists.
 if (typeof window !== 'undefined') {
     // Identify the "Collapse" component.
-    window.Collapse = Collapse;
+    window.Collapse = Collapse
 
     // Define the "Collapse" initialize function.
-    window.initializeCollapses = initializeCollapses;
+    window.initializeCollapses = initializeCollapses
 }
 
 // Export
-export default Collapse;
+export default Collapse

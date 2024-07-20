@@ -26,12 +26,7 @@ export declare interface ContainerInterface {
      *
      * @return {any}
      */
-    add(
-        component: keyof Instances,
-        instance: any,
-        id?: string,
-        override?: boolean
-    ): any
+    add(component: keyof Instances, instance: any, id?: string, override?: boolean): any
 
     /**
      * Get an existing component instance from container.

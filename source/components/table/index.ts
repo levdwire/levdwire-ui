@@ -1,8 +1,8 @@
-import { TableInterface } from "./interface";
-import { TableOptions } from "./types";
-import { InstanceOptions } from "../../container/types";
-import LevdwireContainer from "../../container";
-import Component from "../component";
+import { TableInterface } from './interface'
+import { TableOptions } from './types'
+import { InstanceOptions } from '../../container/types'
+import LevdwireContainer from '../../container'
+import Component from '../component'
 
 /**
  * Default options for the table instance.
@@ -11,7 +11,7 @@ import Component from "../component";
  */
 const Default: TableOptions = {
     // ...
-};
+}
 
 /**
  * Default options for the component instance.
@@ -21,7 +21,7 @@ const Default: TableOptions = {
 const DefaultInstance: InstanceOptions = {
     id: null,
     override: true,
-};
+}
 
 /**
  * @name         Table - Levdwire
@@ -46,7 +46,7 @@ class Table extends Component<TableOptions, HTMLElement> implements TableInterfa
         options: TableOptions = Default,
         instanceOptions: InstanceOptions = DefaultInstance
     ) {
-        super('Table', element, { ...Default ,...options }, instanceOptions);
+        super('Table', element, { ...Default, ...options }, instanceOptions)
     }
 
     /** @inheritdoc */
@@ -57,7 +57,7 @@ class Table extends Component<TableOptions, HTMLElement> implements TableInterfa
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        LevdwireContainer.remove('Table', this._id);
+        LevdwireContainer.remove('Table', this._id)
     }
 
     /** @inheritdoc */
@@ -78,11 +78,11 @@ export function initializeTables(): void {
 // Check if a valid dom element exists.
 if (typeof window !== 'undefined') {
     // Identify the "Table" component.
-    window.Table = Table;
+    window.Table = Table
 
     // Define the "Table" initialize function.
-    window.initializeTables = initializeTables;
+    window.initializeTables = initializeTables
 }
 
 // Export
-export default Table;
+export default Table

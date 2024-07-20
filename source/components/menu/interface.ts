@@ -1,5 +1,5 @@
-import { ComponentInterface } from "../component/interface";
-import { MenuOptions } from "./types";
+import { ComponentInterface } from '../component/interface'
+import { MenuOptions } from './types'
 
 /**
  * @name         MenuInterface - Levdwire
@@ -9,6 +9,7 @@ import { MenuOptions } from "./types";
  * @license      The MIT License (https://levdwire.com/docs/license)
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
-export declare interface MenuInterface extends ComponentInterface<MenuOptions, HTMLElement>  {
+export declare interface MenuInterface
+    extends ComponentInterface<MenuOptions, HTMLElement> {
     // ...
 }

@@ -1,4 +1,4 @@
-import { ComponentOptions } from "./types";
+import { ComponentOptions } from './types'
 
 /**
  * @name         ComponentInterface - Levdwire
@@ -16,7 +16,7 @@ export declare interface ComponentInterface<O = ComponentOptions, E = HTMLElemen
      *
      * @type {string}
      */
-    _id: string;
+    _id: string
 
     /**
      * The component element.
@@ -24,7 +24,7 @@ export declare interface ComponentInterface<O = ComponentOptions, E = HTMLElemen
      * @template E
      * @type {E}
      */
-    _element: E;
+    _element: E
 
     /**
      * The component options.
@@ -32,40 +32,40 @@ export declare interface ComponentInterface<O = ComponentOptions, E = HTMLElemen
      * @template O
      * @type {O}
      */
-    _options: O;
+    _options: O
 
     /**
      * The component status.
      *
      * @type {boolean}
      */
-    _initialized: boolean;
+    _initialized: boolean
 
     /**
      * Initialize component instance.
      *
      * @return {any}
      */
-    initialize(): any;
+    initialize(): any
 
     /**
      * Remove the component instance from the container.
      *
      * @return {boolean|void}
      */
-    remove(): boolean | void;
+    remove(): boolean | void
 
     /**
      * Destroy the component instance from the container.
      *
      * @return {boolean|void}
      */
-    destroy(): boolean | void;
+    destroy(): boolean | void
 
     /**
      * Remove and destroy the component instance from the container.
      *
      * @return {boolean|void}
      */
-    destroyAndRemove(): boolean | void;
+    destroyAndRemove(): boolean | void
 }

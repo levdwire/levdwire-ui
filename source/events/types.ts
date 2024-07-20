@@ -12,19 +12,19 @@ export declare type EventListenerInstance = {
      *
      * @type {HTMLElement}
      */
-    element: HTMLElement;
+    element: HTMLElement
 
     /**
      * The event listener type.
      *
      * @type {string}
      */
-    type: string;
+    type: string
 
     /**
      * The event listener.
      *
      * @type {EventListener | EventListenerObject}
      */
-    handler: EventListener | EventListenerObject;
-};
+    handler: EventListener | EventListenerObject
+}

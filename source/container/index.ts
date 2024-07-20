@@ -1,6 +1,6 @@
-import { ContainerInterface } from "./interface";
-import { Instances } from "./types";
-import Utility from "../utility/levdwire";
+import { ContainerInterface } from './interface'
+import { Instances } from './types'
+import Utility from '../utility/levdwire'
 
 /**
  * @name         Container - Levdwire
@@ -12,7 +12,7 @@ import Utility from "../utility/levdwire";
  **/
 class Container implements ContainerInterface {
     /** @inheritdoc */
-    _instances: Instances;
+    _instances: Instances
 
     /**
      * Create a new container instance.
@@ -22,34 +22,29 @@ class Container implements ContainerInterface {
     constructor() {
         // Set all component instances to empty.
         this._instances = {
-            Accordion : {},
-            Carousel : {},
-            Collapse : {},
-            Dismiss : {},
-            Drawer : {},
-            Dropdown : {},
-            InputImage : {},
-            InputMeter : {},
-            InputNumber : {},
-            Menu : {},
-            Modal : {},
-            Popover : {},
-            Scroll : {},
-            Stepper : {},
-            Table : {},
-            Tabs : {},
-            Toast : {},
-            Tooltip : {}
-        };
+            Accordion: {},
+            Carousel: {},
+            Collapse: {},
+            Dismiss: {},
+            Drawer: {},
+            Dropdown: {},
+            InputImage: {},
+            InputMeter: {},
+            InputNumber: {},
+            Menu: {},
+            Modal: {},
+            Popover: {},
+            Scroll: {},
+            Stepper: {},
+            Table: {},
+            Tabs: {},
+            Toast: {},
+            Tooltip: {},
+        }
     }
 
     /** @inheritdoc */
-    add(
-        component: keyof Instances,
-        instance: any,
-        id?: string,
-        override = false
-    ): any {
+    add(component: keyof Instances, instance: any, id?: string, override = false): any {
         // Check if the component is available.
         if (!this._instances[component]) {
             // Notify the user of the transaction result.

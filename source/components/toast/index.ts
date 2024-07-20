@@ -1,8 +1,8 @@
-import { ToastInterface } from "./interface";
-import { ToastOptions } from "./types";
-import { InstanceOptions } from "../../container/types";
-import LevdwireContainer from "../../container";
-import Component from "../component";
+import { ToastInterface } from './interface'
+import { ToastOptions } from './types'
+import { InstanceOptions } from '../../container/types'
+import LevdwireContainer from '../../container'
+import Component from '../component'
 
 /**
  * Default options for the toast instance.
@@ -11,7 +11,7 @@ import Component from "../component";
  */
 const Default: ToastOptions = {
     // ...
-};
+}
 
 /**
  * Default options for the component instance.
@@ -21,7 +21,7 @@ const Default: ToastOptions = {
 const DefaultInstance: InstanceOptions = {
     id: null,
     override: true,
-};
+}
 
 /**
  * @name         Toast - Levdwire
@@ -46,7 +46,7 @@ class Toast extends Component<ToastOptions, HTMLElement> implements ToastInterfa
         options: ToastOptions = Default,
         instanceOptions: InstanceOptions = DefaultInstance
     ) {
-        super('Toast', element, { ...Default ,...options }, instanceOptions);
+        super('Toast', element, { ...Default, ...options }, instanceOptions)
     }
 
     /** @inheritdoc */
@@ -57,7 +57,7 @@ class Toast extends Component<ToastOptions, HTMLElement> implements ToastInterfa
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        LevdwireContainer.remove('Toast', this._id);
+        LevdwireContainer.remove('Toast', this._id)
     }
 
     /** @inheritdoc */
@@ -78,11 +78,11 @@ export function initializeToasts(): void {
 // Check if a valid dom element exists.
 if (typeof window !== 'undefined') {
     // Identify the "Toast" component.
-    window.Toast = Toast;
+    window.Toast = Toast
 
     // Define the "Toast" initialize function.
-    window.initializeToasts = initializeToasts;
+    window.initializeToasts = initializeToasts
 }
 
 // Export
-export default Toast;
+export default Toast

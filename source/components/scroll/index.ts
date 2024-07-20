@@ -1,8 +1,8 @@
-import { ScrollInterface } from "./interface";
-import { ScrollOptions } from "./types";
-import { InstanceOptions } from "../../container/types";
-import LevdwireContainer from "../../container";
-import Component from "../component";
+import { ScrollInterface } from './interface'
+import { ScrollOptions } from './types'
+import { InstanceOptions } from '../../container/types'
+import LevdwireContainer from '../../container'
+import Component from '../component'
 
 /**
  * Default options for the scroll instance.
@@ -11,7 +11,7 @@ import Component from "../component";
  */
 const Default: ScrollOptions = {
     // ...
-};
+}
 
 /**
  * Default options for the component instance.
@@ -21,7 +21,7 @@ const Default: ScrollOptions = {
 const DefaultInstance: InstanceOptions = {
     id: null,
     override: true,
-};
+}
 
 /**
  * @name         Scroll - Levdwire
@@ -46,7 +46,7 @@ class Scroll extends Component<ScrollOptions, HTMLElement> implements ScrollInte
         options: ScrollOptions = Default,
         instanceOptions: InstanceOptions = DefaultInstance
     ) {
-        super('Scroll', element, { ...Default ,...options }, instanceOptions);
+        super('Scroll', element, { ...Default, ...options }, instanceOptions)
     }
 
     /** @inheritdoc */
@@ -57,7 +57,7 @@ class Scroll extends Component<ScrollOptions, HTMLElement> implements ScrollInte
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        LevdwireContainer.remove('Scroll', this._id);
+        LevdwireContainer.remove('Scroll', this._id)
     }
 
     /** @inheritdoc */
@@ -78,11 +78,11 @@ export function initializeScrolls(): void {
 // Check if a valid dom element exists.
 if (typeof window !== 'undefined') {
     // Identify the "Scroll" component.
-    window.Scroll = Scroll;
+    window.Scroll = Scroll
 
     // Define the "Scroll" initialize function.
-    window.initializeScrolls = initializeScrolls;
+    window.initializeScrolls = initializeScrolls
 }
 
 // Export
-export default Scroll;
+export default Scroll

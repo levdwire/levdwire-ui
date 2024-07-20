@@ -1,5 +1,5 @@
-import { ComponentInterface } from "../../component/interface";
-import { InputImageOptions } from "./types";
+import { ComponentInterface } from '../../component/interface'
+import { InputImageOptions } from './types'
 
 /**
  * @name         InputImageInterface - Levdwire
@@ -9,6 +9,7 @@ import { InputImageOptions } from "./types";
  * @license      The MIT License (https://levdwire.com/docs/license)
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
-export declare interface InputImageInterface extends ComponentInterface<InputImageOptions, HTMLElement> {
+export declare interface InputImageInterface
+    extends ComponentInterface<InputImageOptions, HTMLElement> {
     // ...
 }

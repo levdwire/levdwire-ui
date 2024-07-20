@@ -1,8 +1,8 @@
-import { CarouselInterface } from "./interface";
-import { CarouselOptions } from "./types";
-import { InstanceOptions } from "../../container/types";
-import LevdwireContainer from "../../container";
-import Component from "../component";
+import { CarouselInterface } from './interface'
+import { CarouselOptions } from './types'
+import { InstanceOptions } from '../../container/types'
+import LevdwireContainer from '../../container'
+import Component from '../component'
 
 /**
  * Default options for the accordion instance.
@@ -11,7 +11,7 @@ import Component from "../component";
  */
 const Default: CarouselOptions = {
     // ...
-};
+}
 
 /**
  * Default options for the component instance.
@@ -21,7 +21,7 @@ const Default: CarouselOptions = {
 const DefaultInstance: InstanceOptions = {
     id: null,
     override: true,
-};
+}
 
 /**
  * @name         Carousel - Levdwire
@@ -31,7 +31,10 @@ const DefaultInstance: InstanceOptions = {
  * @license      The MIT License (https://levdwire.com/docs/license)
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
-class Carousel extends Component<CarouselOptions, HTMLElement> implements CarouselInterface {
+class Carousel
+    extends Component<CarouselOptions, HTMLElement>
+    implements CarouselInterface
+{
     /**
      * Create a new accordion instance.
      *
@@ -46,7 +49,7 @@ class Carousel extends Component<CarouselOptions, HTMLElement> implements Carous
         options: CarouselOptions = Default,
         instanceOptions: InstanceOptions = DefaultInstance
     ) {
-        super('Carousel', element, { ...Default ,...options }, instanceOptions);
+        super('Carousel', element, { ...Default, ...options }, instanceOptions)
     }
 
     /** @inheritdoc */
@@ -57,7 +60,7 @@ class Carousel extends Component<CarouselOptions, HTMLElement> implements Carous
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        LevdwireContainer.remove('Carousel', this._id);
+        LevdwireContainer.remove('Carousel', this._id)
     }
 
     /** @inheritdoc */
@@ -78,11 +81,11 @@ export function initializeCarousels(): void {
 // Check if a valid dom element exists.
 if (typeof window !== 'undefined') {
     // Identify the "Carousel" component.
-    window.Carousel = Carousel;
+    window.Carousel = Carousel
 
     // Define the "Carousel" initialize function.
-    window.initializeCarousels = initializeCarousels;
+    window.initializeCarousels = initializeCarousels
 }
 
 // Export
-export default Carousel;
+export default Carousel

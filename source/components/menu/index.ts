@@ -1,8 +1,8 @@
-import { MenuInterface } from "./interface";
-import { MenuOptions } from "./types";
-import { InstanceOptions } from "../../container/types";
-import LevdwireContainer from "../../container";
-import Component from "../component";
+import { MenuInterface } from './interface'
+import { MenuOptions } from './types'
+import { InstanceOptions } from '../../container/types'
+import LevdwireContainer from '../../container'
+import Component from '../component'
 
 /**
  * Default options for the menu instance.
@@ -11,7 +11,7 @@ import Component from "../component";
  */
 const Default: MenuOptions = {
     // ...
-};
+}
 
 /**
  * Default options for the component instance.
@@ -21,7 +21,7 @@ const Default: MenuOptions = {
 const DefaultInstance: InstanceOptions = {
     id: null,
     override: true,
-};
+}
 
 /**
  * @name         Menu - Levdwire
@@ -46,7 +46,7 @@ class Menu extends Component<MenuOptions, HTMLElement> implements MenuInterface 
         options: MenuOptions = Default,
         instanceOptions: InstanceOptions = DefaultInstance
     ) {
-        super('Menu', element, { ...Default ,...options }, instanceOptions);
+        super('Menu', element, { ...Default, ...options }, instanceOptions)
     }
 
     /** @inheritdoc */
@@ -57,7 +57,7 @@ class Menu extends Component<MenuOptions, HTMLElement> implements MenuInterface 
     /** @inheritdoc */
     remove(): boolean | void {
         // Remove existing instance from container.
-        LevdwireContainer.remove('Menu', this._id);
+        LevdwireContainer.remove('Menu', this._id)
     }
 
     /** @inheritdoc */
@@ -78,11 +78,11 @@ export function initializeMenus(): void {
 // Check if a valid dom element exists.
 if (typeof window !== 'undefined') {
     // Identify the "Menu" component.
-    window.Menu = Menu;
+    window.Menu = Menu
 
     // Define the "Menu" initialize function.
-    window.initializeMenus = initializeMenus;
+    window.initializeMenus = initializeMenus
 }
 
 // Export
-export default Menu;
+export default Menu

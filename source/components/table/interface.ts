@@ -1,5 +1,5 @@
-import { ComponentInterface } from "../component/interface";
-import { TableOptions } from "./types";
+import { ComponentInterface } from '../component/interface'
+import { TableOptions } from './types'
 
 /**
  * @name         TableInterface - Levdwire
@@ -9,6 +9,7 @@ import { TableOptions } from "./types";
  * @license      The MIT License (https://levdwire.com/docs/license)
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
-export declare interface TableInterface extends ComponentInterface<TableOptions, HTMLElement> {
+export declare interface TableInterface
+    extends ComponentInterface<TableOptions, HTMLElement> {
     // ...
 }

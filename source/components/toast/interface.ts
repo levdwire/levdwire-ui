@@ -1,5 +1,5 @@
-import { ComponentInterface } from "../component/interface";
-import { ToastOptions } from "./types";
+import { ComponentInterface } from '../component/interface'
+import { ToastOptions } from './types'
 
 /**
  * @name         ToastInterface - Levdwire
@@ -9,6 +9,7 @@ import { ToastOptions } from "./types";
  * @license      The MIT License (https://levdwire.com/docs/license)
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
-export declare interface ToastInterface extends ComponentInterface<ToastOptions, HTMLElement> {
+export declare interface ToastInterface
+    extends ComponentInterface<ToastOptions, HTMLElement> {
     // ...
 }
