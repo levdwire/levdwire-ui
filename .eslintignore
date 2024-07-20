@@ -3,3 +3,4 @@
 distribute/
 library/
 node_modules/
+prettier.config.js
