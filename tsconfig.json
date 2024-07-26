@@ -1,20 +1,21 @@
 {
-  "compilerOptions"   : {
-    "lib"               : ["dom", "es2015"],
-    "outDir"            : "./library/cjs/",
-    "rootDir"           : "./source/",
-    "sourceMap"         : true,
-    "declaration"       : true,
-    "declarationMap"    : true,
-    "noImplicitAny"     : true,
-    "module"            : "ESNext",
-    "target"            : "ESNext",
-    "jsx"               : "react",
-    "allowJs"           : true,
-    "moduleResolution"  : "Node",
-    "esModuleInterop"   : true
-  },
-  "include"           : ["source/**/*.ts", "source/**/*.d.ts", "source/types/**/*.d.ts"],
-  "exclude"           : ["node_modules", "distribute", "library"],
-  "typeRoots"         : ["./node_modules/@types", "./source"]
+    "compilerOptions"   : {
+        "lib"               : ["dom", "es2015"],
+        "outDir"            : "./lib/cjs/",
+        "rootDir"           : "./src/",
+        "sourceMap"         : true,
+        "declaration"       : true,
+        "declarationMap"    : true,
+        "esModuleInterop"   : true,
+        "noImplicitAny"     : true,
+        "strict"            : true,
+        "module"            : "ESNext",
+        "target"            : "ESNext",
+        "jsx"               : "react",
+        "allowJs"           : true,
+        "moduleResolution"  : "Node"
+    },
+    "include"           : ["src/**/*.ts", "src/**/*.d.ts", "src/types/**/*.d.ts"],
+    "exclude"           : ["node_modules", "dist", "lib"],
+    "typeRoots"         : ["./node_modules/@types", "./src"]
 }

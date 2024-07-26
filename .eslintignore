@@ -4,4 +4,5 @@ distribute/
 library/
 node_modules/
 prettier.config.js
+webpack.config.js
 .eslintrc.js

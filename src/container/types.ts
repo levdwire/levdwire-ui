@@ -26,24 +26,24 @@ import { TooltipInterface } from '../components/tooltip/interface'
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
 export declare type Instances = {
-    Accordion: { [id: string]: AccordionInterface }
-    Carousel: { [id: string]: CarouselInterface }
-    Collapse: { [id: string]: CollapseInterface }
-    Dismiss: { [id: string]: DismissInterface }
-    Drawer: { [id: string]: DrawerInterface }
-    Dropdown: { [id: string]: DropdownInterface }
-    InputImage: { [id: string]: InputImageInterface }
-    InputMeter: { [id: string]: InputMeterInterface }
-    InputNumber: { [id: string]: InputNumberInterface }
-    Menu: { [id: string]: MenuInterface }
-    Modal: { [id: string]: ModalInterface }
-    Popover: { [id: string]: PopoverInterface }
-    Scroll: { [id: string]: ScrollInterface }
-    Stepper: { [id: string]: StepperInterface }
-    Table: { [id: string]: TableInterface }
-    Tabs: { [id: string]: TabsInterface }
-    Toast: { [id: string]: ToastInterface }
-    Tooltip: { [id: string]: TooltipInterface }
+	Accordion: { [id: string]: AccordionInterface }
+	Carousel: { [id: string]: CarouselInterface }
+	Collapse: { [id: string]: CollapseInterface }
+	Dismiss: { [id: string]: DismissInterface }
+	Drawer: { [id: string]: DrawerInterface }
+	Dropdown: { [id: string]: DropdownInterface }
+	InputImage: { [id: string]: InputImageInterface }
+	InputMeter: { [id: string]: InputMeterInterface }
+	InputNumber: { [id: string]: InputNumberInterface }
+	Menu: { [id: string]: MenuInterface }
+	Modal: { [id: string]: ModalInterface }
+	Popover: { [id: string]: PopoverInterface }
+	Scroll: { [id: string]: ScrollInterface }
+	Stepper: { [id: string]: StepperInterface }
+	Table: { [id: string]: TableInterface }
+	Tabs: { [id: string]: TabsInterface }
+	Toast: { [id: string]: ToastInterface }
+	Tooltip: { [id: string]: TooltipInterface }
 }
 
 /**
@@ -55,17 +55,17 @@ export declare type Instances = {
  * @copyright    (C) 2010 - 2024 Srylius (Srylius Teknoloji Limited Şirketi)
  **/
 export declare type InstanceOptions = {
-    /**
-     * The instance identifier.
-     *
-     * @type {string}
-     */
-    id?: string
+	/**
+	 * The instance identifier.
+	 *
+	 * @type {string}
+	 */
+	id?: string
 
-    /**
-     * The override status.
-     *
-     * @type {boolean}
-     */
-    override?: boolean
+	/**
+	 * The override status.
+	 *
+	 * @type {boolean}
+	 */
+	override?: boolean
 }
