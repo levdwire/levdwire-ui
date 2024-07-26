@@ -7,24 +7,24 @@
  * @copyright    (C) 2010 - 2024 All rights reserved by Srylius.
  **/
 export declare type EventListenerInstance = {
-    /**
-     * The event listener element.
-     *
-     * @type {HTMLElement}
-     */
-    element: HTMLElement
+	/**
+	 * The event listener element.
+	 *
+	 * @type {HTMLElement}
+	 */
+	element: HTMLElement
 
-    /**
-     * The event listener type.
-     *
-     * @type {string}
-     */
-    type: string
+	/**
+	 * The event listener type.
+	 *
+	 * @type {string}
+	 */
+	type: string
 
-    /**
-     * The event listener.
-     *
-     * @type {EventListener | EventListenerObject}
-     */
-    handler: EventListener | EventListenerObject
+	/**
+	 * The event listener.
+	 *
+	 * @type {EventListener | EventListenerObject}
+	 */
+	handler: EventListener | EventListenerObject
 }
